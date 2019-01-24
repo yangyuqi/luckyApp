@@ -1,0 +1,330 @@
+[
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_checkbox_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_checkbox_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_scale_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\round_scale_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tv_pay_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\tv_pay_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_password_eye.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_line_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\round_line_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_right_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_right_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_blue_gradient_round_side.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_blue_gradient_round_side.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\popup_shape.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\popup_shape.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_round_corner_solid_white.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_round_corner_solid_white.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_blue_gradient.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_blue_gradient.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_identity_front.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_identity_front.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_search.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_search.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_gray_gradient_round_side.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_gray_gradient_round_side.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_photo_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_photo_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_delete.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_delete.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_order.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_order.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_stroke_gray_solid_white.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_stroke_gray_solid_white.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_call.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_call.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_back.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_back.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_bg_material_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_bg_material_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_send.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_send.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_round_corner_white.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_round_corner_white.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_back_black.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_back_black.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\popup_shape_light.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\popup_shape_light.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_sweep.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_sweep.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\view_post_comment_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\drawable\\view_post_comment_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_blue_gradient_rect.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_blue_gradient_rect.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_blue_gradient_round_corner.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_blue_gradient_round_corner.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\footer_text_color.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\footer_text_color.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_identity_back.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_identity_back.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_attestation.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_attestation.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_round_corner_stroke_gray_solid_white.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\bg_round_corner_stroke_gray_solid_white.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\cb_bg_goods_back.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\cb_bg_goods_back.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_person.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_person.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_camera.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_camera.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\confrim_dialog_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\confrim_dialog_bg.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_arrow_up.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_arrow_up.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\navigation_empty_icon.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_money.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_money.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_arrow_right.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\btn_arrow_right.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\drawable\\rectangle_line_bg.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\drawable\\rectangle_line_bg.xml"
+    }
+]

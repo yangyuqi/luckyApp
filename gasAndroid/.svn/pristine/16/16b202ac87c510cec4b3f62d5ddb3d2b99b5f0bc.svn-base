@@ -1,0 +1,552 @@
+package com.yunqilai.consumer.luckyapp.UserCenter;
+
+import android.Manifest;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Environment;
+import android.os.Handler;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.PopupWindow;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+import com.squareup.okhttp.Request;
+import com.tbruyelle.rxpermissions.RxPermissions;
+import com.yunqilai.consumer.R;
+import com.yunqilai.consumer.luckyapp.Common.Base.BasePresenterFragment;
+import com.yunqilai.consumer.luckyapp.Common.Model.FileDataBean;
+import com.yunqilai.consumer.luckyapp.Common.Model.ParseBaseEntity;
+import com.yunqilai.consumer.luckyapp.Common.Presenter.CaptureActivity;
+import com.yunqilai.consumer.luckyapp.Common.Presenter.ConfirmUserActivity;
+import com.yunqilai.consumer.luckyapp.Common.Presenter.LoginActivity;
+import com.yunqilai.consumer.luckyapp.Common.Ui.BottomDialog;
+import com.yunqilai.consumer.luckyapp.Common.Ui.BottomPhotoDialog;
+import com.yunqilai.consumer.luckyapp.Common.Ui.DeleteDialog;
+import com.yunqilai.consumer.luckyapp.Common.Utils.ImageUtil;
+import com.yunqilai.consumer.luckyapp.Common.Utils.OkHttpClientManager;
+import com.yunqilai.consumer.luckyapp.Common.Utils.ResponseCodeUtils;
+import com.yunqilai.consumer.luckyapp.Common.Utils.SharedPreferencesUtils;
+import com.yunqilai.consumer.luckyapp.Common.Utils.UrlUtils;
+import com.yunqilai.consumer.luckyapp.HomePage.Presenter.LocationManagerActivity;
+import com.yunqilai.consumer.luckyapp.MainActivity;
+import com.yunqilai.consumer.luckyapp.ShoppingCart.Bean.AccessTokenBean;
+import com.yunqilai.consumer.luckyapp.UserCenter.Interface.DeleteDialogInterface;
+import com.yunqilai.consumer.luckyapp.UserCenter.Model.AndroidTypeBean;
+import com.yunqilai.consumer.luckyapp.UserCenter.Model.DownLoadBean;
+import com.yunqilai.consumer.luckyapp.UserCenter.Model.ParsneOrderStatusBean;
+import com.yunqilai.consumer.luckyapp.UserCenter.Model.UpdatePhotoBean;
+import com.yunqilai.consumer.luckyapp.UserCenter.Model.UserAttentionBean;
+import com.yunqilai.consumer.luckyapp.UserCenter.Presenter.AboutUsActivity;
+import com.yunqilai.consumer.luckyapp.UserCenter.Presenter.AccountSafeActivity;
+import com.yunqilai.consumer.luckyapp.UserCenter.Presenter.OrderAllInfoActivity;
+import com.yunqilai.consumer.luckyapp.UserCenter.Presenter.RealNameActivity;
+import com.yunqilai.consumer.luckyapp.UserCenter.View.UserCenterView;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import me.iwf.photopicker.PhotoPicker;
+import me.iwf.photopicker.utils.ImageCaptureManager;
+import rx.functions.Action1;
+
+import static android.app.Activity.RESULT_OK;
+
+
+/**
+ * Created by Administrator on 2017/5/22.
+ */
+
+public class UserCenterFragment extends BasePresenterFragment<UserCenterView> implements View.OnClickListener{
+
+    private TextView tv_take_photo , tv_select_photo ,tv_cancel;
+    BottomPhotoDialog dialog ;
+
+    ImageCaptureManager captureManager ;
+
+    private String postStr = null ;
+    private String status = "";
+    private String str_icon ;
+
+    private String phone ;
+
+    @Override
+    public Class<UserCenterView> getViewClass() {
+        return UserCenterView.class;
+    }
+
+    @Override
+    public void bindView() {
+        super.bindView();
+
+        vu.getView_order().setOnClickListener(this);
+        vu.getView_safe().setOnClickListener(this);
+        vu.getView_photo().setOnClickListener(this);
+        vu.getView_addr().setOnClickListener(this);
+        vu.getView_confrim().setOnClickListener(this);
+        vu.getBtn_loginout().setOnClickListener(this);
+        vu.getView_clear().setOnClickListener(this);
+        vu.getView_about().setOnClickListener(this);
+
+        vu.getView_one().setOnClickListener(this);
+        vu.getView_two().setOnClickListener(this);
+        vu.getView_three().setOnClickListener(this);
+        vu.getＶiew_four().setOnClickListener(this);
+        vu.getView_update().setOnClickListener(this);
+
+        if (!getAccessToken().equals("")){
+            vu.getTv_name().setBackgroundResource(android.R.color.transparent);
+            vu.getTv_name().setText((String)SharedPreferencesUtils.getParam(context,SharedPreferencesUtils.userName,""));
+            vu.getBtn_loginout().setVisibility(View.VISIBLE);
+        }else {
+            vu.getBtn_loginout().setVisibility(View.GONE);
+        }
+        vu.getTxt_version().setText("当前版本V"+StringUtils.getAppVersionName(context));
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.rl_select_addr_:
+                if (!getAccessToken().equals("")) {
+                    Intent intent = new Intent(context, LocationManagerActivity.class);
+                    intent.putExtra("flag", "2");
+                    startActivity(intent);
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+
+            case R.id.user_rl_order :
+                if (!getAccessToken().equals("")) {
+                    postStr = "all";
+                    startActivity(new Intent(context, OrderAllInfoActivity.class));
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.ll_photo:
+                if (!getAccessToken().equals("")) {
+                    dialog = new BottomPhotoDialog(context, R.layout.view_popupwindow);
+                    dialog.show();
+                    initDialog(dialog.getView());
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.tv_pick_phone :
+                takePhoto();
+                dialog.dismiss();
+                break;
+
+            case R.id.tv_pick_zone :
+                selectPhoto();
+                dialog.dismiss();
+                break;
+
+            case R.id.tv_cancel:
+                dialog.dismiss();
+                break;
+
+            case R.id.rl_safe :
+                if (!getAccessToken().equals("")) {
+                    startActivity(new Intent(context, AccountSafeActivity.class));
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+
+            case R.id.rl_confrim:
+                if (!getAccessToken().equals("")){
+                if (status.equals("not")){
+                    Intent in = new Intent(context,ConfirmUserActivity.class);
+                    in.putExtra("flag","2");
+                    startActivity(in);
+                }else {
+                    startActivity(new Intent(context, RealNameActivity.class));
+                }}else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.btn_register:
+                DeleteDialog dialogm = new DeleteDialog(context,"提示","确定要退出登录","确定");
+                dialogm.show();
+                dialogm.OnDeleteBtn(new DeleteDialogInterface() {
+                    @Override
+                    public void isDelete(boolean isdelete) {
+                        if (isdelete){
+                            SharedPreferencesUtils.clear(context);
+                            SharedPreferencesUtils.setParam(context,SharedPreferencesUtils.isfristuse,false);
+                            SharedPreferencesUtils.setParam(context,SharedPreferencesUtils.mobile,phone);
+                            Intent intent = new Intent(context,LoginActivity.class);
+                            startActivity(intent);
+                            getContext().finish();
+                        }
+                    }
+                });
+                break;
+            case R.id.rl_clear:
+                final DeleteDialog dialog = new DeleteDialog(context,"提示","确定要清除缓存吗?","确定");
+                dialog.show();
+                dialog.OnDeleteBtn(new DeleteDialogInterface() {
+                    @Override
+                    public void isDelete(boolean isdelete) {
+                        if (isdelete){
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(context,"清除缓存成功",Toast.LENGTH_SHORT).show();
+                                }
+                            },1500);
+                        }
+                    }
+                });
+                break;
+            case R.id.rl_about_us:
+                startActivity(new Intent(context, AboutUsActivity.class));
+                break;
+            case R.id.view_rl_1:
+                if (!getAccessToken().equals("")){
+                postStr = "wait_pay";
+                startActivity(new Intent(context,OrderAllInfoActivity.class));
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.view_rl_2:
+                if (!getAccessToken().equals("")){
+                postStr = "wait_skip";
+                startActivity(new Intent(context,OrderAllInfoActivity.class));
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.view_rl_3:
+                if (!getAccessToken().equals("")){
+                postStr = "wait_receive";
+                startActivity(new Intent(context,OrderAllInfoActivity.class));
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.view_rl_4:
+                if (!getAccessToken().equals("")){
+                postStr = "wait_evaluate";
+                startActivity(new Intent(context,OrderAllInfoActivity.class));
+                }else {
+                    Intent intent = new Intent(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                break;
+
+            case R.id.rl_update :
+                OkHttpClientManager.postAsynJson(gson.toJson(new AndroidTypeBean("android","buyer")), UrlUtils.UPDATE_APP_URL, new OkHttpClientManager.StringCallback() {
+                    @Override
+                    public void onFailure(Request request, IOException e) {
+
+                    }
+
+                    @Override
+                    public void onResponse(String response) {
+                        ParseBaseEntity entity = gson.fromJson(response,ParseBaseEntity.class);
+                        if (entity.getCode().equals(ResponseCodeUtils.OK)){
+                            final DownLoadBean bean = gson.fromJson(gson.toJson(entity.getData()),DownLoadBean.class);
+                            if (!bean.getVersion().equals(StringUtils.getAppVersionName(context))){
+                                  DeleteDialog show_dialog = new DeleteDialog(context,"当前版本"+StringUtils.getAppVersionName(context),"发现新版本"+bean.getVersion(),"去更新");
+                                  show_dialog.OnDeleteBtn(new DeleteDialogInterface() {
+                                      @Override
+                                      public void isDelete(boolean isdelete) {
+                                          if (isdelete){
+                                              final ProgressDialog dialog2 = ProgressDialog.show(context, "提示", "正在下载新的版本");
+                                              dialog2.show();
+                                              OkHttpClientManager.downloadAsyn(UrlUtils.URL_BASE+bean.getAddress(), Environment.getExternalStorageDirectory().getPath(), new OkHttpClientManager.StringCallback() {
+                                                  @Override
+                                                  public void onFailure(Request request, IOException e) {
+
+                                                  }
+
+                                                  @Override
+                                                  public void onResponse(String response) {
+                                                      if (!response.equals("")){
+                                                          dialog2.dismiss();
+                                                          File file = new File(response);
+                                                          Intent intent = new Intent(Intent.ACTION_VIEW);
+                                                            //设置intent的数据类型是应用程序application
+                                                          intent.setDataAndType(Uri.parse("file://" + file.toString()), "application/vnd.android.package-archive");
+                                                            //为这个新apk开启一个新的activity栈
+                                                          intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                            //开始安装
+                                                          startActivity(intent);
+                                                            //关闭旧版本的应用程序的进程
+                                                          android.os.Process.killProcess(android.os.Process.myPid());
+                                                      }
+                                                  }
+                                              });
+                                          }
+                                      }
+                                  });
+                                show_dialog.show();
+                            }else {
+                                Toast.makeText(context,"无需更新最新版本",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+                });
+
+                break;
+        }
+    }
+
+    private void selectPhoto() {
+        RxPermissions permissions = new RxPermissions((MainActivity)context);
+        permissions.request(Manifest.permission.CAMERA,Manifest.permission.VIBRATE,Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Action1<Boolean>() {
+            @Override
+            public void call(Boolean aBoolean) {
+                if (aBoolean){
+                    //选择相册
+                    PhotoPicker.builder()
+                            .setPhotoCount(1)
+                            .setShowCamera(true)
+                            .setShowGif(true)
+                            .setPreviewEnabled(false)
+                            .start(context, UserCenterFragment.this ,PhotoPicker.REQUEST_CODE);
+                }
+            }
+        });
+    }
+
+    private void takePhoto() {
+        RxPermissions permissions = new RxPermissions((MainActivity)context);
+        permissions.request(Manifest.permission.CAMERA,Manifest.permission.VIBRATE,Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Action1<Boolean>() {
+            @Override
+            public void call(Boolean aBoolean) {
+                if (aBoolean){
+                    captureManager = new ImageCaptureManager(context);
+                    Intent intent = null;
+                    try {
+                        intent = captureManager.dispatchTakePictureIntent();
+                        startActivityForResult(intent, ImageCaptureManager.REQUEST_TAKE_PHOTO);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+    }
+
+    private void initDialog(View view) {
+        tv_take_photo = (TextView) view.findViewById(R.id.tv_pick_phone);
+        tv_select_photo = (TextView) view.findViewById(R.id.tv_pick_zone);
+        tv_cancel = (TextView) view.findViewById(R.id.tv_cancel);
+        tv_cancel.setOnClickListener(this);
+        tv_take_photo.setOnClickListener(this);
+        tv_select_photo.setOnClickListener(this);
+    }
+
+    public MainActivity getContext() {
+        return (MainActivity) context;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == RESULT_OK){
+            switch (requestCode){
+                // 拍照
+                case ImageCaptureManager.REQUEST_TAKE_PHOTO:
+                    if(captureManager.getCurrentPhotoPath() != null) {
+                        captureManager.galleryAddPic();
+                        // 照片地址
+                        String imagePaht = captureManager.getCurrentPhotoPath();
+                        try {
+                            updatePhoto(imagePaht);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    break;
+            }
+        }
+        if (resultCode == RESULT_OK && requestCode == PhotoPicker.REQUEST_CODE){
+            if (data != null) {
+                ArrayList<String> photos = data.getStringArrayListExtra(PhotoPicker.KEY_SELECTED_PHOTOS);
+                String imagePaht = photos.get(0) ;
+                try {
+                    updatePhoto(imagePaht);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+
+    public void getOrderStatus(){
+        OkHttpClientManager.postAsynJson(gson.toJson(new AccessTokenBean(getAccessToken())), UrlUtils.GET_EVERY_ORDER_URL, new OkHttpClientManager.StringCallback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(String response) {
+                ParseBaseEntity entity = gson.fromJson(response,ParseBaseEntity.class);
+                if (entity.getCode().equals(ResponseCodeUtils.OK)){
+                    ParsneOrderStatusBean bean = gson.fromJson(gson.toJson(entity.getData()),ParsneOrderStatusBean.class);
+                    if (bean.getWait_pay()>0){
+                        vu.getTv_one().setVisibility(View.VISIBLE);
+                        vu.getTv_one().setText(String.valueOf(bean.getWait_skip()+1));
+                    }else {
+                        vu.getTv_one().setVisibility(View.GONE);
+                    }
+                    if (bean.getWait_skip()>0){
+                        vu.getTv_two().setVisibility(View.VISIBLE);
+                        vu.getTv_two().setText(String.valueOf(bean.getWait_pay()+1));
+                    }else {
+                        vu.getTv_two().setVisibility(View.GONE);
+                    }
+                    if (bean.getWait_receive()>0){
+                        vu.getTv_three().setVisibility(View.VISIBLE);
+                        vu.getTv_three().setText(String.valueOf(bean.getWait_evaluate()+1));
+                    }else {
+                        vu.getTv_three().setVisibility(View.GONE);
+                    }
+                    if (bean.getWait_evaluate()>0){
+                        vu.getTv_four().setVisibility(View.VISIBLE);
+                        vu.getTv_four().setText(String.valueOf(bean.getWait_receive()+1));
+                    }else {
+                        vu.getTv_four().setVisibility(View.GONE);
+                    }
+                }
+            }
+        });
+    }
+
+    @Override
+    public void bindData() {
+        super.bindData();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (postStr!=null){
+            EventBus.getDefault().post(postStr);
+        }
+    }
+
+    public void updatePhoto(String path) throws IOException {
+        if (path!=null) {
+            Glide.with(context).load(path).into(vu.getIv_photo());
+            File file = new File(path);
+            OkHttpClientManager.postAsyn(UrlUtils.UPLOAD_PHOTO_URL, new OkHttpClientManager.StringCallback() {
+                @Override
+                public void onFailure(Request request, IOException e) {
+
+                }
+
+                @Override
+                public void onResponse(String response) {
+                    ParseBaseEntity entity = gson.fromJson(response,ParseBaseEntity.class);
+                    if (entity.getCode().equals(ResponseCodeUtils.OK)){
+                        FileDataBean dataBean = gson.fromJson(gson.toJson(entity.getData()),FileDataBean.class);
+                        EditUserPhoto(dataBean.getPath());
+                    }
+                }
+            },file,"file");
+        }
+    }
+
+    private void EditUserPhoto(final String path) {
+        OkHttpClientManager.postAsynJson(gson.toJson(new UpdatePhotoBean(getAccessToken(), path)), UrlUtils.EDIT_USER_PHOTO_URL, new OkHttpClientManager.StringCallback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(String response) {
+                ParseBaseEntity entity = gson.fromJson(response,ParseBaseEntity.class);
+                if (entity.getCode().equals(ResponseCodeUtils.OK)){
+//                    Glide.with(context).load(UrlUtils.URL_BASE+path).into(vu.getIv_photo());
+                    SharedPreferencesUtils.setParam(context,SharedPreferencesUtils.icon,path);
+                }
+                Toast.makeText(context,entity.getMsg(),Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    public void getAttention(){
+        String s = gson.toJson(new AccessTokenBean(getAccessToken()));
+        OkHttpClientManager.postAsynJson(s, UrlUtils.MY_ATTENTION_URL, new OkHttpClientManager.StringCallback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(String response) {
+                ParseBaseEntity entity = gson.fromJson(response,ParseBaseEntity.class);
+                if (entity.getCode().equals(ResponseCodeUtils.OK)) {
+                    UserAttentionBean bean = gson.fromJson(gson.toJson(entity.getData()), UserAttentionBean.class);
+                    vu.getTv_tv_auth().setText(StringUtils.attentionType(bean.getStatus()));
+                    if (bean.getStatus().equals("not")){
+                        status = "not" ;
+                    }else {
+                        status = "";
+                    }
+                }else {
+                    vu.getTv_tv_auth().setText(StringUtils.attentionType(""));
+                    status = "not" ;
+                }
+            }
+        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        phone = (String) SharedPreferencesUtils.getParam(context,SharedPreferencesUtils.mobile,"");
+        str_icon = (String) SharedPreferencesUtils.getParam(context,SharedPreferencesUtils.icon,"");
+        if (!str_icon.equals("")) {
+            Glide.with(context).load(UrlUtils.URL_BASE + str_icon).into(vu.getIv_photo());
+        }
+        getOrderStatus();
+        String s = (String) SharedPreferencesUtils.getParam(context, SharedPreferencesUtils.userName, "");
+        if (!s.equals("")) {
+            vu.getTv_name().setText(s);
+        }
+        String role = (String) SharedPreferencesUtils.getParam(context,SharedPreferencesUtils.role,"");
+        if (role.equals("manager")||role.equals("delivery")){
+            vu.getView_confrim().setVisibility(View.GONE);
+            return;
+        }else {
+            vu.getView_confrim().setVisibility(View.VISIBLE);
+            getAttention();
+        }
+    }
+}

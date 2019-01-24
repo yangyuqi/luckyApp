@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_main"
+        android:gravity="center"
+        android:text="亲,下单前需要进行实名认证,否则无法下单哦!"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size_13"
+        />
+
+    <RelativeLayout
+        android:paddingRight="@dimen/space_15"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:paddingLeft="@dimen/space_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16"
+            android:text="姓名"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/img_name"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/space_5"
+            android:src="@drawable/btn_delete"/>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/txt_name"
+            android:layout_toLeftOf="@id/img_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="44dp"
+            android:background="@null"
+            android:maxLength="20"
+            android:hint="请输入姓名"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_16"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/divider_color_page"
+        />
+
+    <RelativeLayout
+        android:paddingRight="@dimen/space_15"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/txt_body"
+            android:paddingLeft="@dimen/space_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16"
+            android:layout_centerVertical="true"
+            android:text="身份证"
+            />
+        <ImageView
+            android:id="@+id/img_body"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_delete"/>
+        <EditText
+            android:maxLength="18"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/txt_body"
+            android:layout_toLeftOf="@id/img_body"
+            android:id="@+id/editText_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_30"
+            android:background="@null"
+            android:hint="请输入身份证号码"
+            android:textColor="@color/text_gray"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_16" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/divider_color_page"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="身份证"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_15"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_16"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_line_bg"
+            >
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:id="@+id/iv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/identity_front_bg"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_line_bg"
+            >
+            <ImageView
+                android:id="@+id/imageView_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/identity_back_bg"
+                />
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:id="@+id/iv_iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_show"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_photo_one"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_color"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingTop="@dimen/space_8"
+            android:text="重新上传"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_photo_two"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_weight="1"
+            android:background="@drawable/main_color"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingTop="@dimen/space_8"
+            android:text="重新上传"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_confrim_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_login"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_30"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/btn_login_bg"
+        android:clickable="true"
+        android:text="提交"
+        android:gravity="center"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

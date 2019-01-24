@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/space_15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/space_15"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <com.yunqilai.consumer.luckyapp.Common.Ui.CircleImageView
+            android:id="@+id/iv_iv_goods"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_logo"
+            />
+
+        <TextView
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_black"
+            android:text="商品评分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            />
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/ratingbar_two"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            hedgehog:starCount="5"
+            hedgehog:clickable="true"
+            hedgehog:starEmpty="@drawable/btn_star"
+            hedgehog:starFill="@drawable/btn_star_hl"
+            hedgehog:starImageSize="20dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginLeft="@dimen/space_15"
+        android:hint="输入评价内容..."
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@null"
+        />
+
+    <com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView
+        android:layout_marginLeft="@dimen/space_15"
+        android:numColumns="3"
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@drawable/round_line_bg"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_camera"
+            />
+
+        <ImageView
+            android:id="@+id/iv_select_photo"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

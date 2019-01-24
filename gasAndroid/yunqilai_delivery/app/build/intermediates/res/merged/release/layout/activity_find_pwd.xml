@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <!-- 返回 -->
+    <LinearLayout
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:minWidth="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back_black" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_marginTop="@dimen/login_logo_margin_top"
+        android:layout_marginBottom="@dimen/login_logo_margin_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_find_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_round_corner_stroke_gray_solid_white"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginRight="@dimen/login_input_margin"
+        android:layout_marginLeft="@dimen/login_input_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingLeft="@dimen/common_margin" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/login_input_label_width"
+                android:layout_height="wrap_content"
+                style="@style/text_black_17"
+                android:text="@string/label_phonenumber"
+                />
+
+            <EditText
+                android:id="@+id/edt_login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="11"
+                style="@style/text_black_17"
+                android:inputType="number"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_enter_phonenumber"
+                android:textColorHint="@color/text_gray"
+                android:background="@null" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size_common"
+            android:background="@color/line_gray_deep" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/login_input_label_width"
+                android:layout_height="wrap_content"
+                style="@style/text_black_17"
+                android:text="@string/label_reset_pwd" />
+
+            <EditText
+                android:id="@+id/edt_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/text_black_17"
+                android:inputType="textPassword"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/text_gray"
+                android:background="@null"
+                android:hint="@string/hint_reset_pwd" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size_common"
+            android:background="@color/line_gray_deep" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/login_input_label_width"
+                android:layout_height="wrap_content"
+                style="@style/text_black_17"
+                android:text="@string/label_sure_pwd" />
+
+            <EditText
+                android:id="@+id/edt_reg_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/text_black_17"
+                android:inputType="textPassword"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/text_gray"
+                android:background="@null"
+                android:hint="@string/hint_sure_pwd" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size_common"
+            android:background="@color/line_gray_deep" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/login_input_label_width"
+                android:layout_height="wrap_content"
+                style="@style/text_black_17"
+                android:text="@string/label_verification_code" />
+
+            <EditText
+                android:id="@+id/edt_reg_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/text_black_17"
+                android:inputType="number"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/text_gray"
+                android:background="@null"
+                android:hint="@string/hint_enter_verification_code" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:background="@drawable/bg_blue_gradient_round_corner"
+                android:layout_width="@dimen/find_pwd_code_width"
+                android:layout_height="@dimen/find_pwd_code_height"
+                android:gravity="center"
+                style="@style/text_white_17"
+                android:text="@string/btn_verification_code"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_findpwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_below="@id/ll_find_pwd"
+        android:background="@drawable/bg_blue_gradient_round_side"
+        android:layout_marginTop="@dimen/find_pwd_btn_margin_top"
+        android:layout_marginLeft="@dimen/login_input_margin"
+        android:layout_marginRight="@dimen/login_input_margin"
+        style="@style/text_white_17"
+        android:text="@string/btn_sure" />
+</RelativeLayout>

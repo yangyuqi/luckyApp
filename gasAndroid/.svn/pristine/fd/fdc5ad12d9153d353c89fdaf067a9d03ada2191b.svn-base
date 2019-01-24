@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_ll"
+        layout="@layout/header_layout"/>
+
+    <android.support.design.widget.TabLayout
+        android:layout_below="@+id/include_ll"
+        android:elevation="0dp"
+        android:id="@+id/goods_details_tl"
+        app:tabTextAppearance="@style/tabtextstyle"
+        app:tabIndicatorColor="@color/main_color"
+        app:tabSelectedTextColor="@color/main_color"
+        app:tabTextColor="@color/text_gray"
+        android:layout_toLeftOf="@+id/ib_carts"
+        android:layout_toRightOf="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:id="@+id/view_m"
+        android:layout_below="@+id/goods_details_tl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider_2"
+        android:background="@color/divider_color_page"/>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_below="@+id/view_m"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/homepage_spring_view"
+        app:type="follow"
+        app:header="@layout/default_header"
+        app:footer="@layout/default_footer"
+        >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/every_order_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+    </com.liaoinstan.springview.widget.SpringView>
+
+    <RelativeLayout
+        android:layout_below="@+id/view_m"
+        android:id="@+id/ll_show"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有相关信息哦~"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

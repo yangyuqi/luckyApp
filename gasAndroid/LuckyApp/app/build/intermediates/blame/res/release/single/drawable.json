@@ -1,0 +1,394 @@
+[
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ripple_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\ripple_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_delete.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_delete.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\drawable_bar_home_my.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\drawable_bar_home_my.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\code_confirm_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\code_confirm_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\drawable_bar_home_select.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\drawable_bar_home_select.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_login_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_login_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_arrow_up.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_arrow_up.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_back_left_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_back_left_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\cb_bg_goods_back.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\cb_bg_goods_back.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_arrow_right.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_arrow_right.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_search_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_search_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_carts_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_carts_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\scan_code_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\scan_code_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_delete_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_delete_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\search_round_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\search_round_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_line_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\round_line_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\drawable_bar_home_home_page.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\drawable_bar_home_home_page.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_add_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_add_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_send_again_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_send_again_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\frame_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\frame_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_write_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_write_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_black_mid_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\round_black_mid_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_delete.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_delete.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tv_carts_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\tv_carts_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_text_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\round_text_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_blue_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\round_blue_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\selector_pickerview_btn.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.contrarywind\\Android-PickerView\\3.2.5\\res\\drawable\\selector_pickerview_btn.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_black_line_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\round_black_line_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\round_scale_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\round_scale_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_reduce_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_reduce_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_password_eye.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\rb_checked_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\rb_checked_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\message_code_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\message_code_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\rectangle_line_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\rectangle_line_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\barcode_flashlight_selector.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\barcode_flashlight_selector.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\confrim_dialog_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\confrim_dialog_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\drawable_bar_home_cart.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\drawable_bar_home_cart.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tv_pay_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\tv_pay_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_photo_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_photo_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\footer_text_color.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\footer_text_color.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\view_post_comment_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\drawable\\view_post_comment_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_bg_material_item.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_bg_material_item.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_right_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_right_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\popup_shape_light.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\popup_shape_light.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_checkbox_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_checkbox_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\iv_money_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\iv_money_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_login_login_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_login_login_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_camera.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\drawable\\__picker_camera.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\radio_button_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\radio_button_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\identity_back_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\identity_back_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_no_bg_login.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\btn_no_bg_login.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\identity_front_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\identity_front_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\navigation_empty_icon.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\popup_shape.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\popup_shape.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\drawable_bar_home_safe.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\drawable_bar_home_safe.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\main_color.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\main_color.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tv_delete_bg.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable\\tv_delete_bg.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    }
+]

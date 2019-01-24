@@ -1,0 +1,420 @@
+package com.yunqilai.consumer.luckyapp.HomePage.Presenter;
+
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.bigkoo.pickerview.OptionsPickerView;
+import com.bigkoo.pickerview.TimePickerView;
+import com.bigkoo.pickerview.listener.CustomListener;
+import com.squareup.okhttp.Request;
+import com.yunqilai.consumer.R;
+import com.yunqilai.consumer.luckyapp.ChoicePage.Bean.SelfAddressBean;
+import com.yunqilai.consumer.luckyapp.ChoicePage.Bean.SelfDataBean;
+import com.yunqilai.consumer.luckyapp.Common.Base.BasePresenterActivity;
+import com.yunqilai.consumer.luckyapp.Common.Model.ParseBaseEntity;
+import com.yunqilai.consumer.luckyapp.Common.Utils.OkHttpClientManager;
+import com.yunqilai.consumer.luckyapp.Common.Utils.ResponseCodeUtils;
+import com.yunqilai.consumer.luckyapp.Common.Utils.UrlUtils;
+import com.yunqilai.consumer.luckyapp.Common.Utils.adapter.CommonAdapter;
+import com.yunqilai.consumer.luckyapp.Common.Utils.adapter.ViewHolder;
+import com.yunqilai.consumer.luckyapp.Common.View.Vu;
+import com.yunqilai.consumer.luckyapp.HomePage.View.SelectPayWayView;
+import com.yunqilai.consumer.luckyapp.ShoppingCart.Bean.AccessTokenBean;
+import com.yunqilai.consumer.luckyapp.UserCenter.StringUtils;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Created by Administrator on 2017/6/7.
+ */
+
+public class SelectPayWayActivity extends BasePresenterActivity<SelectPayWayView> implements View.OnClickListener{
+    private OptionsPickerView pvCustomTime ;
+
+    private int selectPosition = 0;//用于记录用户选择的变量
+
+    private ArrayList<String> date = new ArrayList<>();
+    private ArrayList<ArrayList<String>> time = new ArrayList<>();
+    private ArrayList<String> com_time = new ArrayList<>();
+
+    private List<SelfAddressBean> data = new ArrayList<>();
+    private CommonAdapter<SelfAddressBean> adapter ;
+
+    private MyAdapter m_adapter ;
+
+    private String str_time ="" ;
+    private String str_pay = "0";
+    private String str_send = "0";
+    private String pickPlaceId ;
+    private String pickName = "";
+
+    @Override
+    protected Class<SelectPayWayView> getViewClass() {
+        return SelectPayWayView.class;
+    }
+
+    @Override
+    protected void onBindView() {
+        super.onBindView();
+
+        str_pay = getIntent().getStringExtra("payType");
+        str_send = getIntent().getStringExtra("deliverType");
+        pickPlaceId = getIntent().getStringExtra("pickPlaceId");
+        m_adapter = new MyAdapter(data);
+        vu.getLs().setAdapter(m_adapter);
+        vu.getLs().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                selectPosition = i;
+                m_adapter.notifyDataSetChanged();
+                pickPlaceId = data.get(i).getId();
+                pickName = data.get(i).getName()+data.get(i).getAddress();
+            }
+        });
+
+        vu.getIv_back().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        vu.getView_time().setOnClickListener(this);
+        vu.getTv_online().setOnClickListener(this);
+        vu.getTv_send().setOnClickListener(this);
+        vu.getTv_yun().setOnClickListener(this);
+        vu.getTv_self().setOnClickListener(this);
+        vu.getTv_confrim().setOnClickListener(this);
+        getNoLinkData();
+        initType();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.tv_pay_style_q :
+                vu.getTv_online().setTextColor(context.getResources().getColor(R.color.text_blue));
+                vu.getTv_online().setBackgroundResource(R.drawable.round_blue_bg);
+                vu.getTv_send().setTextColor(context.getResources().getColor(R.color.text_black));
+                vu.getTv_send().setBackgroundResource(R.drawable.round_black_mid_bg);
+                str_pay = "0" ;
+                break;
+
+            case R.id.tv_pay_style_w :
+                vu.getTv_send().setTextColor(context.getResources().getColor(R.color.text_blue));
+                vu.getTv_send().setBackgroundResource(R.drawable.round_blue_bg);
+                vu.getTv_online().setTextColor(context.getResources().getColor(R.color.text_black));
+                vu.getTv_online().setBackgroundResource(R.drawable.round_black_mid_bg);
+                str_pay = "1";
+                break;
+
+            case R.id.tv_send_q :
+                vu.getTv_yun().setTextColor(context.getResources().getColor(R.color.text_blue));
+                vu.getTv_yun().setBackgroundResource(R.drawable.round_blue_bg);
+                vu.getTv_self().setTextColor(context.getResources().getColor(R.color.text_black));
+                vu.getTv_self().setBackgroundResource(R.drawable.round_black_mid_bg);
+                str_send = "0";
+                vu.getView_time().setVisibility(View.VISIBLE);
+                vu.getLs().setVisibility(View.GONE);
+                vu.getTv_h().setText("送货时间");
+                break;
+
+            case R.id.tv_send_w :
+                vu.getTv_self().setTextColor(context.getResources().getColor(R.color.text_blue));
+                vu.getTv_self().setBackgroundResource(R.drawable.round_blue_bg);
+                vu.getTv_yun().setTextColor(context.getResources().getColor(R.color.text_black));
+                vu.getTv_yun().setBackgroundResource(R.drawable.round_black_mid_bg);
+                str_send = "1";
+                vu.getTv_h().setText("请选择自提点");
+                vu.getLs().setVisibility(View.VISIBLE);
+                vu.getIv_bottom().setVisibility(View.GONE);
+//                vu.getView_time().setVisibility(View.GONE);
+                getSelfAddress();
+                break;
+
+            case R.id.rl_select_time:
+                if (str_send.equals("0")) {
+                    vu.getIv_bottom().setVisibility(View.VISIBLE);
+                    initCustomTimePicker();
+                    pvCustomTime.show();
+
+                }
+                break;
+            case R.id.tv_get_confrim :
+
+                if (str_send.equals("0")){
+                    if (!str_time.equals("")){
+                        Intent bundle = new Intent();
+                        bundle.putExtra("time",str_time);
+                        bundle.putExtra("pay",str_pay);
+                        bundle.putExtra("send",str_send);
+                        bundle.putExtra("pickPlaceId", "");
+                        setResult(1,bundle);
+                        finish();
+                    }else {
+                        Toast.makeText(context,"选择配送时间",Toast.LENGTH_SHORT).show();
+                    }
+                }else if (str_send.equals("1")){
+                    if (pickPlaceId!=null) {
+                        Intent bundle = new Intent();
+                        bundle.putExtra("time", str_time);
+                        bundle.putExtra("pay", str_pay);
+                        bundle.putExtra("send", str_send);
+                        bundle.putExtra("pickPlaceId", pickPlaceId);
+                        bundle.putExtra("pickName" , pickName);
+                        setResult(1, bundle);
+                        finish();
+                    }else {
+                        Toast.makeText(context,"请选择自提点",Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+                break;
+        }
+    }
+
+    private void getSelfAddress() {
+        data.clear();
+        OkHttpClientManager.postAsynJson(gson.toJson(new AccessTokenBean(getAccessToken())), UrlUtils.GET_SELF_ADDRESS_URL, new OkHttpClientManager.StringCallback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(String response) {
+                ParseBaseEntity entity = gson.fromJson(response,ParseBaseEntity.class);
+                if (entity.getCode().equals(ResponseCodeUtils.OK)){
+                    SelfDataBean selfDataBean = gson.fromJson(gson.toJson(entity.getData()),SelfDataBean.class);
+                    data.addAll(selfDataBean.getList());
+                    m_adapter.setData(data);
+                    m_adapter.notifyDataSetChanged();
+                    for (int i = 0 ;i<data.size();i++){
+                        SelfAddressBean addressBean = data.get(i);
+                        if (addressBean.getId().equals(pickPlaceId)){
+                            selectPosition = i ;
+                            m_adapter.notifyDataSetChanged();
+                            vu.getLs().setSelection(selectPosition);
+                            pickPlaceId = data.get(i).getId();
+                            pickName = data.get(i).getName()+data.get(i).getAddress();
+
+                        }else if (pickPlaceId.equals("")){
+                            selectPosition = 0 ;
+                            m_adapter.notifyDataSetChanged();
+                            vu.getLs().setSelection(selectPosition);
+                            pickPlaceId = data.get(0).getId();
+                            pickName = data.get(i).getName()+data.get(0).getAddress();
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    private void initCustomTimePicker() {
+
+        pvCustomTime = new OptionsPickerView.Builder(this, new OptionsPickerView.OnOptionsSelectListener() {
+
+            @Override
+            public void onOptionsSelect(int options1, int options2, int options3, View v) {
+
+                String str =  date.get(options1)
+                        + time.get(options1).get(options2)
+                        ;
+
+                Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+                str_time = str ;
+                vu.getTv_show_tiime().setText(str_time);
+            }
+        }).setTitleText("选择配送时间").build();
+        pvCustomTime.setPicker(date, time);
+
+
+    }
+    private void getNoLinkData() {
+        date.clear();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd EEE");
+        Date currentDate = new Date();
+        List<Date> days = StringUtils.dateToWeek(currentDate);
+        Collections.reverse(days);
+        for (Date dates : days) {
+            String str = sdf.format(dates);
+            date.add(str);
+        }
+
+        getTime("9:00","11:00");
+        getTime("11:00","13:00");
+        getTime("13:00","15:00");
+        getTime("15:00","17:00");
+        getTime("17:00","19:00");
+
+        ArrayList<String> test = new ArrayList<>();
+        test.add("9:00-11:00");
+        test.add("11:00-13:00");
+        test.add("13:00-15:00");
+        test.add("15:00-17:00");
+        test.add("17:00-19:00");
+        time.add(test);
+        time.add(test);
+        time.add(test);
+        time.add(test);
+        time.add(test);
+        time.add(test);
+
+    }
+
+    public class MyAdapter extends BaseAdapter {
+        List<SelfAddressBean> list;
+        public MyAdapter(List<SelfAddressBean> mlist) {
+            list = mlist ;
+        }
+
+        public void setData(List<SelfAddressBean> mlist){
+            list = mlist ;
+            notifyDataSetChanged();
+        }
+
+        @Override
+        public int getCount() {
+            return list.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return list.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+
+            MyViewHolder viewHolder = null ;
+            if (convertView == null) {
+                convertView = LayoutInflater.from(context).inflate(R.layout.selff_address_item_layout, null);
+                viewHolder = new MyViewHolder();
+                viewHolder.rb = (RadioButton) convertView.findViewById(R.id.cart_rb_q);
+                viewHolder.tv_one = (TextView) convertView.findViewById(R.id.tv_name);
+                viewHolder.tv_two = (TextView) convertView.findViewById(R.id.tv_address);
+                convertView.setTag(viewHolder);
+            }else {
+                viewHolder = (MyViewHolder) convertView.getTag();
+            }
+            viewHolder.tv_one.setText(data.get(position).getName());
+            viewHolder.tv_two.setText(data.get(position).getAddress());
+            if(selectPosition == position){
+                viewHolder.rb.setBackgroundResource(R.drawable.btn_choose_hl);
+            }
+            else{
+                viewHolder.rb.setBackgroundResource(R.drawable.btn_choose);
+
+            }
+            return convertView;
+        }
+    }
+    public class MyViewHolder{
+        RadioButton rb ;
+        TextView tv_one ,tv_two ;
+    }
+
+    public void getTime(String begin ,String end){
+        SimpleDateFormat df = new SimpleDateFormat("HH:mm");//设置日期格式
+        Date now =null;
+        Date beginTime = null;
+        Date endTime = null;
+        try {
+            now = df.parse(df.format(new Date()));
+            beginTime = df.parse(begin);
+            endTime = df.parse(end);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (StringUtils.belongCalendar(now,beginTime,endTime)){
+            com_time.add(begin+"-"+end);
+            if (begin.equals("9:00")&&end.equals("11:00")){
+                com_time.add("11:00-13:00");
+                com_time.add("13:00-15:00");
+                com_time.add("15:00-17:00");
+                com_time.add("17:00-19:00");
+            }else if (begin.equals("11:00")&&end.equals("13:00")){
+                com_time.add("13:00-15:00");
+                com_time.add("15:00-17:00");
+                com_time.add("17:00-19:00");
+            }else if (begin.equals("13:00")&&end.equals("15:00")){
+                com_time.add("15:00-17:00");
+                com_time.add("17:00-19:00");
+            }else if (begin.equals("15:00")&&end.equals("17:00")){
+                com_time.add("17:00-19:00");
+            }else {
+                com_time.add("9:00-11:00");
+                com_time.add("11:00-13:00");
+                com_time.add("13:00-15:00");
+                com_time.add("15:00-17:00");
+                com_time.add("17:00-19:00");
+            }
+            time.add(com_time);
+        }
+    }
+
+    private void initType() {
+        if (str_pay.equals("0")){
+            vu.getTv_online().setTextColor(context.getResources().getColor(R.color.text_blue));
+            vu.getTv_online().setBackgroundResource(R.drawable.round_blue_bg);
+            vu.getTv_send().setTextColor(context.getResources().getColor(R.color.text_black));
+            vu.getTv_send().setBackgroundResource(R.drawable.round_black_mid_bg);
+            str_pay = "0" ;
+        }else {
+            vu.getTv_send().setTextColor(context.getResources().getColor(R.color.text_blue));
+            vu.getTv_send().setBackgroundResource(R.drawable.round_blue_bg);
+            vu.getTv_online().setTextColor(context.getResources().getColor(R.color.text_black));
+            vu.getTv_online().setBackgroundResource(R.drawable.round_black_mid_bg);
+            str_pay = "1";
+        }
+
+        if (str_send.equals("0")){
+            vu.getTv_yun().setTextColor(context.getResources().getColor(R.color.text_blue));
+            vu.getTv_yun().setBackgroundResource(R.drawable.round_blue_bg);
+            vu.getTv_self().setTextColor(context.getResources().getColor(R.color.text_black));
+            vu.getTv_self().setBackgroundResource(R.drawable.round_black_mid_bg);
+            str_send = "0";
+            vu.getView_time().setVisibility(View.VISIBLE);
+            vu.getLs().setVisibility(View.GONE);
+            vu.getTv_h().setText("送货时间");
+        }else {
+            vu.getTv_self().setTextColor(context.getResources().getColor(R.color.text_blue));
+            vu.getTv_self().setBackgroundResource(R.drawable.round_blue_bg);
+            vu.getTv_yun().setTextColor(context.getResources().getColor(R.color.text_black));
+            vu.getTv_yun().setBackgroundResource(R.drawable.round_black_mid_bg);
+            str_send = "1";
+            vu.getTv_h().setText("请选择自提点");
+            vu.getLs().setVisibility(View.VISIBLE);
+            vu.getIv_bottom().setVisibility(View.GONE);
+            getSelfAddress();
+        }
+    }
+}

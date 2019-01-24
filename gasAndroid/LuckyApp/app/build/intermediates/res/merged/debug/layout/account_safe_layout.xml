@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_nicheng"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:text="昵称"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/tv_new"
+            />
+
+        <TextView
+            android:singleLine="true"
+            android:layout_marginLeft="100dp"
+            android:layout_toLeftOf="@+id/tv_new"
+            android:id="@+id/tv_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_15"
+            android:drawablePadding="@dimen/space_10"
+            android:drawableRight="@drawable/btn_right"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider_1"
+        android:background="@color/text_gray"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pwd"
+        android:clickable="true"
+        android:background="@drawable/ripple_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16"
+            android:text="修改密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"
+            />
+
+        <TextView
+            android:drawablePadding="@dimen/space_10"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_black"
+            android:gravity="center_vertical"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_15"
+            android:drawableRight="@drawable/btn_right"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider_1"
+        android:background="@color/text_gray"/>
+</LinearLayout>

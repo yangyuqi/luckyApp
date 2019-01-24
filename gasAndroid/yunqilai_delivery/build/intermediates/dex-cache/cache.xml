@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\glide-3.7.0_eaf9b8fa63df7f92726d4f2453dd3ab1e5140bb7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\transition\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-transition-26.0.0-alpha1_45a5ef83a63c21d1175a5ca67d374755db357c70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.liaoinstan.springview\library\1.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69fa933cdb0ded211ad967cd86ac50f7d1750f90">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.liaoinstan.springview-library-1.2.6_c645914464c6303ec51d0e8394e9883cc3bb1b2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\io.github.openfeign\feign-core\9.5.0\7b89da81b21d8cdd4f5b4c79b730dbc11427bb14\feign-core-9.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7b89da81b21d8cdd4f5b4c79b730dbc11427bb14">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\feign-core-9.5.0_916c8af589c086ecd5854f96239a073f4f159765.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\org.jvnet\animal-sniffer-annotation\1.0\67da8e0d8a8ef79c461a489f9f7bb3e86e23ccae\animal-sniffer-annotation-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="67da8e0d8a8ef79c461a489f9f7bb3e86e23ccae">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\animal-sniffer-annotation-1.0_356251c7edef8da920c6b277f9a162d2a3852296.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\libs\android-core-3.1.1-SNAPSHOT.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9ee2a9155907c0a0398caa2eeceafdafd79ee8d8">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\android-core-3.1.1-SNAPSHOT_338552f60ad2bc478bf8115757ca399600486404.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.0.0\4c8d1536dba3812cc1592090dc20c47a4ed3c35e\okhttp-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4c8d1536dba3812cc1592090dc20c47a4ed3c35e">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\okhttp-2.0.0_1b505f459befe51008f1c97203f379e967c8501c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.tbruyelle.rxpermissions\rxpermissions\0.9.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="80c22c5f8ef176f5afde9dcbf718ea266a74847a">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.tbruyelle.rxpermissions-rxpermissions-0.9.4_998821c7b4c7b84ac19047af344bbf337d792b31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\gson-2.8.0_9b5614fb2c9c177b6aed4db5f9656bbeb37b6a47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_ce9d5a3328252cc79d34fe66c0276ccc44158179.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_65c540434c74478ed0d442a887a7155685efd86f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-26.0.0-alpha1_867eece4434ac27270558fc248bbb1cb63e7cf28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\design\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-design-26.0.0-alpha1_4c4bef75fc98f4ac8760fffc020f387dbd7e690a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.8.0\5a11f020cce2d11eb71ba916700600e18c4547e7\okhttp-3.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\okhttp-3.8.0_28b5ff178447dd199eb70fd0166fbcfc1601c92f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.10.3\b842f960942503cf1abbcc8c173a7f2c19d43726\jsoup-1.10.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b842f960942503cf1abbcc8c173a7f2c19d43726">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\jsoup-1.10.3_1ed187aad6c186f207c516c60e838bb16c32edfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_12278da3820f3d4e4063f8e49068d5bf12e10180.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_966db7c584831678fe67deaf60c8d2abc9de87c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\me.iwf.photopicker\PhotoPicker\0.9.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="158bd4ae15436b1649ca51808287f4540e8bf9ad">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\me.iwf.photopicker-PhotoPicker-0.9.0_3c26d7f3032b811a0b6be53495c1c55323646007.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jcore\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7880825917f7ad26d7fdfaa421cd1e1827d13c10">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\cn.jiguang.sdk-jcore-1.1.1_2c26b34f4177119ea9c76e2417cf731633dfa4a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_522d58afb11dba60f81ac08972bc9b930c185aa9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-26.0.0-alpha1_8855695836d924702b9783cd3815284df9aa7356.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4c4b83de2f6412072d2a29b1b7a5b03edaad5ff">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\io.reactivex-rxandroid-1.1.0_1c78c4c275506521a80902ae6d0a546475146ead.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\okio-1.13.0_cd4bf3c273497709ab7e25082099d3cec4163c83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.jakewharton.rxbinding\rxbinding\0.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ffc09f4e5bdebe068e5101f587dadc42b60fbfe4">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.jakewharton.rxbinding-rxbinding-0.4.0_c521301db950a48fe133fe786a511f3b6d8df59b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\eventbus-3.0.0_80b52529df9e68ac1f6bd08d680dab89bd0eebfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.0\748f0546d5c3c27f1aef07270ffea0c45f0c42a4\rxjava-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="748f0546d5c3c27f1aef07270ffea0c45f0c42a4">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\rxjava-1.1.0_7fffd08553d74a779655b1f3162230b9091ef12e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jpush\3.0.3\jars\libs\jpush-android_v3.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7da1fe9424ad39b3e138685e798569b7e404e8df">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\jpush-android_v3.0.3_0fc6419d62d2062b521badf4403793c9e0bc203b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_45bdaf4027e73f6e59b75038e989c71d8a0d7ae8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_0221bf535a1516b45d1f474e41faaec4907fa40a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-26.0.0-alpha1_3c5db87e24f73092d4713d911da99dfa311b468a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_2de89f1e13e7f136a65d6f0a39ce1f58e5c431ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\qiuweiyu\.gradle\caches\modules-2\files-2.1\io.github.openfeign\feign-gson\9.5.0\b2fa4ddb353da5bb5e2deffe805d5e68c23dc0c7\feign-gson-9.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b2fa4ddb353da5bb5e2deffe805d5e68c23dc0c7">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\feign-gson-9.5.0_76f45961907e3660f71fa7e8d151e525d45c91ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\libs\core-3.1.1-SNAPSHOT.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5589d0e71fbbd91262d1aa6c8e153ff211ec9fe0">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\core-3.1.1-SNAPSHOT_30fb392426782531ab985f98504afbcbe1943aa6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_f6bb0b95afd01ff23489059daaf69f0a87198991.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-26.0.0-alpha1_616712a35616edd96d6c4e898ecd11f42f6e884b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\libs\hellocharts-library-1.5.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="700944cb3a8ce4fe543cfac1a9146a11cbf702dc">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\hellocharts-library-1.5.8_e82b4e4728569b8927da1ba01d1aadd353f23625.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_44ac0a65d37a9b82a2acc820cca882e67beac398.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jpush\3.0.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="637572952be0db98c9288fb9f9fb923a71401be1">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\cn.jiguang.sdk-jpush-3.0.3_590614578595f9159eca52f9ef3881c19064001f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jcore\1.1.1\jars\libs\jcore-android_v1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0149c38b9688b28e80fab18616d4e80c1906d573">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\jcore-android_v1.1.1_5438824cb304222f7b54769f0589d995e15b1d10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.jakewharton.rxbinding\rxbinding-appcompat-v7\0.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cea3c0edbda1279bc261187fb3b6f874bfc841f4">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.jakewharton.rxbinding-rxbinding-appcompat-v7-0.4.0_e0016fbdd7a908084188bf18cb66a65d292f5ec3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\exploded-aar\com.jude\rollviewpager\1.4.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5369e56159e8bd94b665f90390f262d26a57e73a">
+        <dex dex="E:\hxd\gasAndroid\yunqilai_delivery\app\build\intermediates\pre-dexed\debug\com.jude-rollviewpager-1.4.6_d6cf33066b474ea7bb2c2e9c2f1ad19b9e1301ca.jar" />
+    </item>
+
+</items>

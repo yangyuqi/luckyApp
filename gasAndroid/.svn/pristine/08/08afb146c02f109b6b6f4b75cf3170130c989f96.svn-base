@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="@dimen/space_10"
+        android:background="@drawable/rectangle_line_bg"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_iv_icon"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo"
+                />
+
+            <TextView
+                android:id="@+id/choice_page_view_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+
+            <TextView
+                android:id="@+id/tv_pay_num"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:text="$104.00"
+                android:textColor="@color/text_orgin"
+                android:textSize="@dimen/text_size_17"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

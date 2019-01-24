@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="@dimen/space_15"
+        android:paddingLeft="@dimen/space_15"
+        android:background="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_kk"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="客户信息"
+            android:textColor="@color/text_blue"
+            android:textSize="16sp"
+            />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/tv_name_gas"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/tv_phone_gas"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/tv_id_gas"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货地址"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/tv_address_gas"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_15"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/space_15"
+        android:paddingLeft="@dimen/space_15"
+        android:background="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="气罐信息"
+            android:textColor="@color/text_blue"
+            android:textSize="16sp"
+            />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下次例检时间"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/tv_time_gas"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="瓶罐到期时间"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/tv_time_time_gas"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已例检次数"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/tv_num_gas"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_kk"
+            android:layout_marginTop="@dimen/space_15"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/space_15"
+            android:paddingLeft="@dimen/space_15"
+            android:background="@color/bg_white"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="条形编码"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:id="@+id/tv_gas_num"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="瓶罐编号"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:id="@+id/tv_gas_count"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="瓶罐型号"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:id="@+id/tv_gas_model"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生产日期"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:id="@+id/tv_gas_produce"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已使用次数"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:id="@+id/tv_gas_use_num"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_login"
+            android:clickable="true"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/bg_white"
+            android:text="去购买"
+            android:background="@drawable/btn_login_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_kk"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginRight="@dimen/space_30"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

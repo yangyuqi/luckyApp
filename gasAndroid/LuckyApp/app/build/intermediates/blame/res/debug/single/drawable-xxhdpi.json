@@ -1,0 +1,522 @@
+[
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_attestation_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_attestation_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_right_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_right_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_money.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_money.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_concentration_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_concentration_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\logo.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_enter_task.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_enter_task.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_wait.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_wait.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_experience.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_experience.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_attestation.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_attestation.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_authentication_failure.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_authentication_failure.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash3.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\splash3.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_person_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_person_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_drop_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_drop_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\logo_app.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\logo_app.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\pop_but_pressed.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\pop_but_pressed.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_safe_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_safe_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_attestation.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_attestation.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_search.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_search.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_change.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_change.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_order_scan_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_order_scan_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash2.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\splash2.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\pop_but_default.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\pop_but_default.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_authentication_success.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_authentication_success.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_output.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_output.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_right.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_right.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_sweep.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_sweep.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_send.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_send.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_wechat.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_wechat.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_point_gray.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_point_gray.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_tail_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_tail_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_brought.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_brought.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_home_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_home_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_sweep_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_sweep_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_self.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_self.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_concentration.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_concentration.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_enter_common.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_enter_common.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_message.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_message.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_arrow_up.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_arrow_up.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_choose.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_choose.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_maintenance.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_maintenance.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_close.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_close.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_autonym.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_autonym.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_take.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_take.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_shopping_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_shopping_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_success.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_success.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_write.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_write.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_order_scan.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_order_scan.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_call_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_call_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash1.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\splash1.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_manual.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_manual.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_back_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_back_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_pay.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_pay.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_refuse.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_refuse.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_my_right.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_my_right.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\banner.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\banner.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\to_down.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\to_down.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_down.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_down.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_awit_appraise.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_awit_appraise.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_search.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_search.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_search_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_search_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_search_gray.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_search_gray.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_authentication_failureddd.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_authentication_failureddd.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_reduce.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_reduce.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_alipay.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_alipay.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_choose.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_choose.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_delete_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_delete_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_order_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_order_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_shopping_small.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_shopping_small.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_awit_take.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_awit_take.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_drop.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_drop.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_logistics.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_logistics.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_tail.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_tail.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_shopping.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_shopping.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_order.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_order.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_person.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_person.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_camera.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_camera.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_shopping_small_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_shopping_small_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_logo.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_logo.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_my_right_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_my_right_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_add_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_add_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_star.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_star.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_audit.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_audit.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_home.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_home.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_choose_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_choose_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_delete.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_delete.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_authentication_delete.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_authentication_delete.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_evaluate.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_evaluate.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_task.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_task.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_back_black.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_back_black.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_write_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_write_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_trash_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_trash_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_awit_pay.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_awit_pay.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_camera_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_camera_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_attestation_failure.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_attestation_failure.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_user.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_user.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\welcome.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\welcome.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_pay.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_pay.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_up.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_up.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_send_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_send_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_add.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_add.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_connection.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_connection.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_hint.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_hint.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_submit.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_submit.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_distribution_finish.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_distribution_finish.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_arrow_right.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_arrow_right.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_message.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_message.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_recovery.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_recovery.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_reduce_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_reduce_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_distribution.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_distribution.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_back_black_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_back_black_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_pin.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_pin.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_call.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_call.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_unionpay.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_unionpay.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_star_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_star_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_message_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_message_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_order_delivery.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_order_delivery.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_safe.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_safe.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\no_data.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\no_data.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_money_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_money_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_trash.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_trash.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_time.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_time.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_front_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_front_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_authentication_delete_hl.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_authentication_delete_hl.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_send.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_send.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_back.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_back.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_aerate.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_aerate.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\scan_line.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\scan_line.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_awit_send.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_awit_send.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_volume.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\icon_volume.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_front.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\drawable-xxhdpi\\btn_front.png"
+    }
+]

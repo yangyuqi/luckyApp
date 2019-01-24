@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_color">#5badff</color>
+    <color name="side_yellow">#f4ce56</color>
+    <color name="side_origin">#ff670b</color>
+    <color name="side_dark">#f1f6ff</color>
+    //背景
+    <color name="bg_main">#f1f6ff</color>
+    <color name="bg_blue">#e2f4ff</color>
+    <color name="bg_gray">#fafafa</color>
+    <color name="bg_mid_gray">#f3f4f6</color>
+    <color name="bg_main_gray">#f9f9f9</color>
+    <color name="bg_white">#ffffff</color>
+    //分割
+    <color name="divider_color_main">#cdcdcd</color>
+    <color name="divider_color_page">#b2b2b2</color>
+
+    //文字颜色
+    <color name="text_white">#fff</color>
+    <color name="text_black">#323232</color>
+    <color name="text_gray">#898989</color>
+    <color name="text_blue">#5badff</color>
+    <color name="text_orgin">#ff670b</color>
+    <color name="text_deep_blue">#f46200</color>
+
+
+    <color name="lightgray">#D3D3D3</color>
+    <color name="mengceng">#88000000</color>
+
+    <color name="gray_btn">#ddd</color>
+
+</resources>

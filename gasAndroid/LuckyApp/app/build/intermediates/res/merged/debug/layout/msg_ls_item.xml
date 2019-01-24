@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_test_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/space_5"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingRight="@dimen/space_10"
+                android:paddingLeft="@dimen/space_10"
+                android:id="@+id/tv_time"
+                android:textSize="@dimen/text_size_15"
+                android:textColor="@color/bg_white"
+                android:background="#cdcdcd"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2017-06-5"
+                />
+
+        </RelativeLayout>
+
+
+        <com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_below="@+id/rl_test_r"
+            android:id="@+id/ls_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView>
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>

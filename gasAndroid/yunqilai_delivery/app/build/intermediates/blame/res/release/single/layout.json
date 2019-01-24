@@ -1,0 +1,506 @@
+[
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_splash_end_page.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_splash_end_page.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_main.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_modify_nickname.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_modify_nickname.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_scan_code.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_scan_code.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\operate_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\operate_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\rotation_header.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\rotation_header.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_tank_detail.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_tank_detail.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_navigation_item_header.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\listview_product_list.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\listview_product_list.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_item_photo.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_item_photo.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_navigation_item_subheader.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\view_tank_operate_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\view_tank_operate_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_search_order_result.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_search_order_result.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_dispatch.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_dispatch.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_picker_fragment_image_pager.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_picker_fragment_image_pager.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\simple_spinner_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\simple_spinner_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_dispatch_statistics.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_dispatch_statistics.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\acfun_footer.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\acfun_footer.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\listview_dispatch_matter_list.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\listview_dispatch_matter_list.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_order.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_order.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_text_input_password_icon.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\listview_tank_operate.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\listview_tank_operate.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_dispatch_matter.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_dispatch_matter.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\operate_delievely_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\operate_delievely_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\acfun_header.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\acfun_header.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\listview_info_manage_list.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\listview_info_manage_list.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\dialog_tip.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\dialog_tip.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_search_order.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_search_order.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\refresh_header_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\refresh_header_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_replace_code.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_replace_code.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\rotation_footer.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\rotation_footer.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\default_header.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\default_header.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_activity_photo_pager.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_activity_photo_pager.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_my.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_my.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_order_detail.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_order_detail.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_layout_tab_icon.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_bottom_navigation_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\jpush_popwin_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\cn.jiguang.sdk\\jpush\\3.0.3\\res\\layout\\jpush_popwin_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_menu_item_action_area.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\meituan_footer.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\meituan_footer.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_navigation_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\new_order_fragment.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\new_order_fragment.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\toast_myself.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\toast_myself.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_find_pwd.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_find_pwd.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_fragment_photo_picker.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_fragment_photo_picker.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\confrim_dialog.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\confrim_dialog.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_navigation_menu.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_picker_item_pager.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_picker_item_pager.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_info_manage.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_info_manage.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\view_popupwindow.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\view_popupwindow.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\dialog_select_img.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\dialog_select_img.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_accounts_security.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_accounts_security.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_login.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_attestation.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_attestation.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_add_attestation.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_add_attestation.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_dispatch_matter_detail.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_dispatch_matter_detail.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_layout_snackbar_include.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_info_manage_list.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_info_manage_list.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_scan_code.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_scan_code.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\ali_header.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\ali_header.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_layout_tab_text.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_toolbar.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_toolbar.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_custom_big.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_navigation_menu_item.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\jpush_webview_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\cn.jiguang.sdk\\jpush\\3.0.3\\res\\layout\\jpush_webview_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\listview_order_list.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\listview_order_list.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\listview_attestation_list.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\listview_attestation_list.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_item_directory.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_item_directory.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\ali_footer.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\ali_footer.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_search_tank_result.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_search_tank_result.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\view_common_title.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\view_common_title.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\__picker_activity_photo_picker.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\layout\\__picker_activity_photo_picker.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\new_info_manger_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\new_info_manger_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_layout_snackbar.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_input_code.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_input_code.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_navigation_item_separator.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\dialog_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\dialog_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_search_tank.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_search_tank.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_modify_password.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_modify_password.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_attestation_detail.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_attestation_detail.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_splash.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_welcome.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\default_footer.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\default_footer.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_about_us.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\meituan_header.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.liaoinstan.springview\\library\\1.2.6\\res\\layout\\meituan_header.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\fragment_dispatch_list.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\src\\main\\res\\layout\\fragment_dispatch_list.xml"
+    },
+    {
+        "merged": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "E:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    }
+]

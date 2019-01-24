@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:src="@drawable/btn_back_black"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_input_height"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:background="@color/bg_gray_mid"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:layout_toRightOf="@+id/iv_back"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_search_gray"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"/>
+            <EditText
+                android:id="@+id/et_search"
+                android:textCursorDrawable="@null"
+                style="@style/text_black_14"
+                android:textColorHint="@color/text_gray"
+                android:hint="@string/hint_enter_order_key"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/btn_search"
+            style="@style/text_black_17"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_common"
+        android:background="@color/line_gray"/>
+
+</LinearLayout>

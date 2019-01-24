@@ -1,0 +1,4 @@
+#Mon Dec 11 10:09:09 CST 2017
+base.0=E\:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=E\:\\hxd\\gasAndroid\\yunqilai_delivery\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

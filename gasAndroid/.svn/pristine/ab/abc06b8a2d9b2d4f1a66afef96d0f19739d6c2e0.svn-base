@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/bg_white"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_audit"
+                        />
+                    <TextView
+                        android:id="@+id/tv_status_speed"
+                        android:textColor="@color/text_black"
+                        android:text="审核中"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/ripple_bg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款总金额"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/space_15"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <TextView
+            android:textColor="@color/text_orgin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_15"
+            android:id="@+id/tv_price"
+            />
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_histroy"
+         android:background="@color/bg_white"
+         android:layout_marginTop="@dimen/space_10"
+         android:layout_width="match_parent"
+         android:layout_height="45dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="协商历史"
+             android:textSize="@dimen/text_size_16"
+             android:textColor="@color/text_black"
+             android:layout_centerVertical="true"
+             android:paddingLeft="@dimen/space_15"
+             />
+
+         <ImageView
+             android:layout_marginRight="@dimen/space_15"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/btn_right_bg"
+             />
+
+     </RelativeLayout>
+
+            <TextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:background="@color/bg_white"
+          android:layout_marginTop="@dimen/space_10"
+          android:text="退款信息"
+          android:textColor="@color/text_black"
+          android:textSize="@dimen/text_size_16"
+          android:gravity="center_vertical"
+          android:paddingLeft="@dimen/space_15"
+          />
+
+       <com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView
+           android:background="@color/bg_white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/ls_sv"
+           ></com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:textSize="@dimen/space_15"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退款原因 :"
+                />
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:textSize="@dimen/space_15"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退款金额 :"
+                    />
+                <TextView
+                    android:id="@+id/refund_money"
+                    android:textColor="@color/text_orgin"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:textSize="@dimen/space_15"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退款说明 :"
+                    android:id="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/refund_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:textSize="@dimen/space_15"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申请时间 :"
+                    />
+                <TextView
+                    android:id="@+id/refund_time"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:textSize="@dimen/space_15"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退款编号 :"
+                    />
+                <TextView
+                    android:id="@+id/refund_num"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

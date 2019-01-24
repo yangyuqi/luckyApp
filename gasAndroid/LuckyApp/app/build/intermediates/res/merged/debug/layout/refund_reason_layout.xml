@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#f9f9f9"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="#047cff"
+            />
+
+        <TextView
+            android:id="@+id/tv_confrim"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="#047cff"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            android:layout_centerVertical="true"
+            android:text="取消订单"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_black"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:listSelector="#0000"
+        android:dividerHeight="@dimen/space_divider_1"
+        android:divider="@color/divider_color_page"
+        android:id="@+id/rg"
+        android:background="@color/bg_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+        <!--<RadioButton-->
+            <!--android:drawablePadding="@dimen/space_20"-->
+            <!--android:drawableLeft="@drawable/rb_checked_bg"-->
+            <!--android:background="@null"-->
+            <!--android:button="@null"-->
+            <!--android:textSize="@dimen/text_size_15"-->
+            <!--android:layout_marginLeft="38dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="不想要了"-->
+            <!--android:textColor="@color/text_black"-->
+            <!--/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/space_divider_1"-->
+            <!--android:background="@color/divider_color_page"/>-->
+
+        <!--<RadioButton-->
+            <!--android:drawablePadding="@dimen/space_20"-->
+            <!--android:drawableLeft="@drawable/rb_checked_bg"-->
+            <!--android:background="@null"-->
+            <!--android:button="@null"-->
+            <!--android:textSize="@dimen/text_size_15"-->
+            <!--android:textColor="@color/text_black"-->
+            <!--android:text="收货信息填写错误"-->
+            <!--android:layout_marginLeft="38dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/space_divider_1"-->
+            <!--android:background="@color/divider_color_page"/>-->
+        <!--<RadioButton-->
+            <!--android:drawablePadding="@dimen/space_20"-->
+            <!--android:drawableLeft="@drawable/rb_checked_bg"-->
+            <!--android:background="@null"-->
+            <!--android:button="@null"-->
+            <!--android:textSize="@dimen/text_size_15"-->
+            <!--android:textColor="@color/text_black"-->
+            <!--android:text="其他"-->
+            <!--android:layout_marginLeft="38dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/space_divider_1"-->
+            <!--android:background="@color/divider_color_page"/>-->
+
+ </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

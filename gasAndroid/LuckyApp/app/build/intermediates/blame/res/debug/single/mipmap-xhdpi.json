@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\star_full.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-xhdpi\\star_full.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\star_half.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-xhdpi\\star_half.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher_round.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\star_empty.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-xhdpi\\star_empty.png"
+    }
+]

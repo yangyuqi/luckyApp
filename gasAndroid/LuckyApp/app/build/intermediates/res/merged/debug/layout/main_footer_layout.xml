@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutFooter"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg_main">
+
+    <View
+        android:id="@+id/viewSplit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider_2"
+        android:background="@color/divider_color_main" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/foot_bar_home"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/drawable_bar_home_select"
+            android:text="精选" />
+
+        <RadioButton
+            android:id="@+id/foot_bar_im"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/drawable_bar_home_safe"
+            android:text="安全知识" />
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/foot_bar_im2"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/drawable_bar_home_home_page"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/foot_bar_interest"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/drawable_bar_home_cart"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/main_footbar_user"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/drawable_bar_home_my"
+            android:text="我的" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <View
+                android:id="@+id/viewSplitLine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@null" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/textUnreadLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/viewSplitLine"
+                android:layout_toRightOf="@+id/viewSplitLine"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_7" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

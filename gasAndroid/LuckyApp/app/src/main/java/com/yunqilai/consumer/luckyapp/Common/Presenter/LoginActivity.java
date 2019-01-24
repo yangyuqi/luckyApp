@@ -1,0 +1,181 @@
+package com.yunqilai.consumer.luckyapp.Common.Presenter;
+
+import android.Manifest;
+import android.content.Intent;
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
+
+import com.squareup.okhttp.Request;
+import com.tbruyelle.rxpermissions.RxPermissions;
+import com.yunqilai.consumer.R;
+import com.yunqilai.consumer.luckyapp.Common.Base.BasePresenterActivity;
+import com.yunqilai.consumer.luckyapp.Common.Model.CloseLoginBean;
+import com.yunqilai.consumer.luckyapp.Common.Model.LoginBean;
+import com.yunqilai.consumer.luckyapp.Common.Model.LoginBeanData;
+import com.yunqilai.consumer.luckyapp.Common.Model.ParseBaseEntity;
+import com.yunqilai.consumer.luckyapp.Common.Model.ParseLoginEntity;
+import com.yunqilai.consumer.luckyapp.Common.Model.PostLoginEntity;
+import com.yunqilai.consumer.luckyapp.Common.Utils.MD5Utils;
+import com.yunqilai.consumer.luckyapp.Common.Utils.OkHttpClientManager;
+import com.yunqilai.consumer.luckyapp.Common.Utils.ResponseCodeUtils;
+import com.yunqilai.consumer.luckyapp.Common.Utils.SharedPreferencesUtils;
+import com.yunqilai.consumer.luckyapp.Common.Utils.UrlUtils;
+import com.yunqilai.consumer.luckyapp.Common.View.FindPwdView;
+import com.yunqilai.consumer.luckyapp.Common.View.LoginView;
+import com.yunqilai.consumer.luckyapp.Common.View.VuCallback;
+import com.yunqilai.consumer.luckyapp.MainActivity;
+import com.yunqilai.consumer.luckyapp.UserCenter.StringUtils;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.io.IOException;
+import java.util.Set;
+
+import cn.jpush.android.api.JPushInterface;
+import cn.jpush.android.api.TagAliasCallback;
+import rx.functions.Action1;
+
+/**
+ * Created by Administrator on 2017/5/23.
+ */
+
+public class LoginActivity extends BasePresenterActivity<LoginView> {
+
+    private String phone ;
+    CloseLoginBean closeLoginBean ;
+
+    @Override
+    protected Class<LoginView> getViewClass() {
+        return LoginView.class;
+    }
+
+    @Override
+    protected void onBindView() {
+        super.onBindView();
+        EventBus.getDefault().register(this);
+
+        vu.getIv_back().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        vu.setOnClickListener(new VuCallback<View>() {
+            @Override
+            public void execute(View result) {
+                switch (result.getId()){
+                    case R.id.btn_login:
+                        if (vu.getPhoneNum().length()==11&&!vu.getPhoneNum().equals("")){
+                            if (!vu.getPwdNum().equals("")){
+                                RxPermissions permissions = new RxPermissions(LoginActivity.this);
+                                permissions.request(Manifest.permission.READ_PHONE_STATE).subscribe(new Action1<Boolean>() {
+                                    @Override
+                                    public void call(Boolean aBoolean) {
+                                    if (aBoolean) {
+                                        LoginBeanData entity = new LoginBeanData(vu.getPhoneNum(), MD5Utils.md5Password(vu.getPwdNum()), "buyer", StringUtils.getPhotoImEi(context));
+                                        String type = gson.toJson(entity);
+                                        String url = UrlUtils.LOGIN_USER_URL;
+                                        OkHttpClientManager.postAsynJson(type, url, new OkHttpClientManager.StringCallback() {
+                                            @Override
+                                            public void onFailure(Request request, IOException e) {
+
+                                            }
+
+                                            @Override
+                                            public void onResponse(String response) {
+                                                LoginBean baseEntity = gson.fromJson(response, LoginBean.class);
+                                                if (baseEntity.getCode().equals(ResponseCodeUtils.OK)) {
+                                                    ParseLoginEntity loginEntity = baseEntity.getData();
+                                                    SharedPreferencesUtils.setParam(LoginActivity.this, SharedPreferencesUtils.access_token, loginEntity.getAccessToken());
+                                                    SharedPreferencesUtils.setParam(LoginActivity.this, SharedPreferencesUtils.refresh_token, loginEntity.getRefreshToken());
+                                                    SharedPreferencesUtils.setParam(LoginActivity.this, SharedPreferencesUtils.userName, loginEntity.getUserName());
+                                                    SharedPreferencesUtils.setParam(LoginActivity.this, SharedPreferencesUtils.mobile, loginEntity.getMobile());
+
+                                                    try {
+                                                        SharedPreferencesUtils.setParam(LoginActivity.this, SharedPreferencesUtils.role, loginEntity.getRole());
+                                                    } catch (Exception e) {
+                                                    }
+
+                                                    try {
+                                                        SharedPreferencesUtils.setParam(LoginActivity.this, SharedPreferencesUtils.icon, loginEntity.getIcon());
+                                                    } catch (Exception e) {
+
+                                                    }
+                                                    if (closeLoginBean != null) {
+                                                        finish();
+                                                        return;
+                                                    }
+
+                                                    String name = (String) SharedPreferencesUtils.getParam(context, SharedPreferencesUtils.mobile, "");
+                                                    String aline = name + "_1_" + StringUtils.getPhotoImEi(context);
+
+                                                    JPushInterface.setAlias(context, aline, new TagAliasCallback() {
+                                                        @Override
+                                                        public void gotResult(int i, String s, Set<String> set) {
+
+
+                                                        }
+                                                    });
+
+                                                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                                    EventBus.getDefault().post(6);
+                                                    finish();
+                                                } else {
+                                                    Toast.makeText(context, baseEntity.getMsg(), Toast.LENGTH_SHORT).show();
+                                                }
+
+                                            }
+                                        });
+
+                                    }else {
+                                        Toast.makeText(context,"缺少权限",Toast.LENGTH_SHORT).show();
+                                    }
+                                    }
+                                });
+
+                            }else {
+                                Toast.makeText(LoginActivity.this,"密码不能为空",Toast.LENGTH_SHORT).show();
+                            }
+                        }else {
+                            Toast.makeText(LoginActivity.this,"请输入正确11位手机号码",Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case R.id.tv_forget_pwd:
+                        startActivity(new Intent(LoginActivity.this, FindPwdActivity.class));
+                        break;
+                    case R.id.tv_register:
+                        startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+                        break;
+                }
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroyVu() {
+        super.onDestroyVu();
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe
+    public void onEvent(String s){
+        if (s.equals("closeLogin")){
+            finish();
+        }
+    }
+
+    @Subscribe
+    public void onEvent(CloseLoginBean bean){
+        closeLoginBean = bean ;
+    }
+
+    @Override
+    protected void afterResume() {
+        super.afterResume();
+        phone = (String) SharedPreferencesUtils.getParam(context,SharedPreferencesUtils.mobile,"");
+        vu.getEdt_phone().setText(phone);
+    }
+}

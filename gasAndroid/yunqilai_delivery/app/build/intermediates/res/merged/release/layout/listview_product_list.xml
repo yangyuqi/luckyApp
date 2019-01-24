@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_blue"
+
+    android:padding="@dimen/common_margin">
+    <ImageView
+        android:id="@+id/iv_product_icon"
+        android:layout_width="@dimen/product_icon_height"
+        android:layout_height="@dimen/product_icon_height"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_product_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        style="@style/text_black_14"
+        android:text=""/>
+    <TextView
+        android:id="@+id/tv_label_ride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_product_num"
+        android:layout_alignBottom="@id/tv_product_num"
+        style="@style/text_black_12"
+        android:text="@string/label_ride_sign"/>
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_product_icon"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_toLeftOf="@id/tv_label_ride"
+        style="@style/text_black_14"
+        android:text=""/>
+    <TextView
+        android:id="@+id/tv_product_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_name"
+        android:layout_alignLeft="@id/tv_product_name"
+        android:layout_marginTop="@dimen/common_margin"
+        style="@style/text_gray_12"
+        android:text="@string/label_type_"/>
+    <TextView
+        android:id="@+id/tv_product_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_product_type_label"
+        android:layout_alignBottom="@id/tv_product_type_label"
+        style="@style/text_gray_12"
+        android:text=""/>
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/tv_product_name"
+        style="@style/text_orange_14"
+        android:text=""/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/three_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space_15"
+        android:paddingBottom="@dimen/space_15"
+        android:textColor="@color/text_black"
+        android:text="17sp"
+        android:textSize="@dimen/text_size_17"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/three_tv_content"
+        android:paddingBottom="@dimen/space_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:textColor="@color/text_gray"
+        android:text="沙斯柯达"
+        android:textSize="@dimen/text_size_15"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider_1"
+        android:background="@color/divider_color_page"/>
+
+
+    <com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView
+        android:dividerHeight="@dimen/space_divider_1"
+        android:divider="@color/divider_color_page"
+        android:id="@+id/three_lssv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView>
+
+</LinearLayout>

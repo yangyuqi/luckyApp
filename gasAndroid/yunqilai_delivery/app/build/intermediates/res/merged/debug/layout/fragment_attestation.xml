@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_white">
+    <com.yunqilai.delivery.ui.view.CommonTitle
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleStr="@string/label_attestation"
+        app:rightStr="@string/label_add_new"
+        app:showLeftIcon="false"
+        app:showRight="true"/>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:type="follow"
+        app:header="@layout/default_header"
+        app:footer="@layout/default_footer">
+        <ScrollView
+            android:scrollbars="none"
+            android:id="@+id/scroll_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray_blue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dispatch_list_head_height"
+                    android:orientation="horizontal"
+                    android:background="@color/bg_gray_blue"
+                    android:gravity="right|center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_black_14"
+                        android:text="@string/label_gong"/>
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_blue_14" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_margin"
+                        style="@style/text_black_14"
+                        android:text="@string/label_tiao"/>
+                </LinearLayout>
+                <com.yunqilai.delivery.ui.view.NoScrollListView
+                    android:id="@+id/lv_attestation_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/bg_gray_blue"
+                    android:dividerHeight="@dimen/divider_height_common"/>
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/rl_no_data"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/no_data"
+                            />
+                        <TextView
+                            android:textSize="@dimen/text_size_16"
+                            android:textColor="@color/text_gray"
+                            android:layout_marginTop="@dimen/space_15"
+                            android:text="没有相关信息哦~"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>

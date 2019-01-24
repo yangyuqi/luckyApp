@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+                <!--android:focusable="true"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+
+    <!--<TextView-->
+        <!--android:background="@color/bg_white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="- 运气来液化气 -"-->
+        <!--android:textSize="@dimen/text_size_17"-->
+        <!--android:textColor="@color/text_black"-->
+        <!--/>-->
+
+      <!--<com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView-->
+          <!--android:paddingBottom="@dimen/space_10"-->
+          <!--android:horizontalSpacing="@dimen/space_10"-->
+          <!--android:verticalSpacing="@dimen/space_10"-->
+          <!--android:paddingLeft="@dimen/space_10"-->
+          <!--android:paddingRight="@dimen/space_10"-->
+          <!--android:numColumns="2"-->
+          <!--android:scrollbars="none"-->
+          <!--android:background="@color/bg_white"-->
+          <!--android:id="@+id/choice_page_view_gv"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="wrap_content">-->
+
+      <!--</com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView>-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginTop="@dimen/space_10"-->
+                    <!--android:background="@color/bg_white"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="- 运气来搭配推荐 -"-->
+                    <!--android:textSize="@dimen/text_size_17"-->
+                    <!--android:textColor="@color/text_black"-->
+                    <!--/>-->
+
+                <!--<com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView-->
+                    <!--android:paddingBottom="@dimen/space_10"-->
+                    <!--android:horizontalSpacing="@dimen/space_10"-->
+                    <!--android:verticalSpacing="@dimen/space_10"-->
+                    <!--android:paddingLeft="@dimen/space_10"-->
+                    <!--android:paddingRight="@dimen/space_10"-->
+                    <!--android:numColumns="2"-->
+                    <!--android:scrollbars="none"-->
+                    <!--android:background="@color/bg_white"-->
+                    <!--android:id="@+id/choice_page_view_tro_gv"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <!--</com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView>-->
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+
+      <ListView
+          android:id="@+id/ls"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"></ListView>
+
+</com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

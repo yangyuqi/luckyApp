@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingBottom="@dimen/space_10"
+        android:background="@color/bg_white"
+        android:paddingTop="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.yunqilai.consumer.luckyapp.Common.Ui.CircleImageView
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/civ"
+        />
+
+        <TextView
+            android:layout_marginRight="@dimen/text_size_15"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginTop="@dimen/space_10"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:textColor="@color/text_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/civ"
+            android:id="@+id/tv_name"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5"
+            android:id="@+id/tv_time"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/civ"
+            android:layout_below="@+id/tv_name"
+            />
+
+        <TextView
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/space_14"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/civ"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/space_10"
+            />
+
+</RelativeLayout>
+</LinearLayout>

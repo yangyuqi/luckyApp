@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_white">
+    <com.yunqilai.delivery.ui.view.CommonTitle
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleStr="@string/btn_search_result"/>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:type="follow"
+        app:header="@layout/default_header"
+        app:footer="@layout/default_footer">
+        <ListView
+            android:id="@+id/lv_order_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_gray_blue"
+            android:dividerHeight="@dimen/divider_height_common"/>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>

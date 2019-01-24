@@ -1,0 +1,394 @@
+package com.yunqilai.delivery.ui.activity.infomanage;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.squareup.okhttp.Request;
+import com.yunqilai.delivery.R;
+import com.yunqilai.delivery.manager.SharedPreferencesUtil;
+import com.yunqilai.delivery.model.Bean.Info.ActionOperateBean;
+import com.yunqilai.delivery.model.Bean.Info.GetTankBean;
+import com.yunqilai.delivery.model.Bean.Info.ReplaceBarBean;
+import com.yunqilai.delivery.model.Bean.ParseBaseEntity;
+import com.yunqilai.delivery.model.Tank;
+import com.yunqilai.delivery.request.base.ErrorCode;
+import com.yunqilai.delivery.ui.Dialog.BottomPhotoDialog;
+import com.yunqilai.delivery.ui.activity.BaseActivity;
+import com.yunqilai.delivery.ui.activity.common.LoginActivity;
+import com.yunqilai.delivery.ui.activity.common.ScanCodeActivity;
+import com.yunqilai.delivery.ui.interlayer.infomanage.TankDetailInterlayer;
+import com.yunqilai.delivery.ui.presenter.infomanage.TankDetailPresenter;
+import com.yunqilai.delivery.ui.view.CommonTitle;
+import com.yunqilai.delivery.utils.Event;
+import com.yunqilai.delivery.utils.MyOkHttpClientManager;
+import com.yunqilai.delivery.utils.ResponseUtils;
+import com.yunqilai.delivery.utils.UrlUtils;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TankDetailActivity extends BaseActivity<TankDetailPresenter> implements TankDetailInterlayer {
+
+    private CommonTitle commonTitle;
+
+    private View view_show_one ,view_show_two ;
+
+    private TextView usernameTv;
+    private TextView phoneTv;
+    private TextView nextCheckTimeTv;
+    private TextView tankExpiredTimeTv;
+    private TextView checkedTimesTv;
+    private TextView barCodeTv;
+    private TextView tankCodeTv;
+    private TextView tankModelTv;
+    private TextView produceTimeTv;
+    private TextView useTimesTv ,tv_operate_time ,tv_operate_name;
+    ListView listView ;
+    private int selectPosition = -1;//用于记录用户选择的变量
+    private MyAdapter adapter ;
+    private String id ,operate_status ;
+    private TextView btn , btn_change;
+
+    private String from ,role ,orderId ,tankId ,post_str ,barId;
+
+    private String buyPhone="";
+    private String buyName = "";
+
+    private List<UseBean> data = new ArrayList<>();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EventBus.getDefault().register(this);
+        setContentView(R.layout.activity_tank_detail);
+
+        orderId = getIntent().getStringExtra("orderId");
+        buyPhone = getIntent().getStringExtra("buyPhone");
+        buyName = getIntent().getStringExtra("buyName");
+
+        id = getIntent().getStringExtra("id");//条码
+        from = getIntent().getStringExtra("from");// 1 点击条目进入　2扫一扫进入(１.如果配送员主页只能看２.管理员可修改) 3.搜索 4.绑定
+        role = (String) SharedPreferencesUtil.get(context,SharedPreferencesUtil.role,"");
+        presenter = new TankDetailPresenter(this,this,getAccessToken(),id);
+
+        initView();
+        initEvent();
+
+        presenter.requestData();
+    }
+
+    private void initView(){
+        commonTitle = (CommonTitle)findViewById(R.id.common_title);
+
+        usernameTv = (TextView)findViewById(R.id.tv_username);
+        phoneTv = (TextView)findViewById(R.id.tv_phone);
+        usernameTv.setText(buyName);
+        phoneTv.setText(buyPhone);
+
+
+        nextCheckTimeTv = (TextView)findViewById(R.id.tv_next_check_time);
+        tankExpiredTimeTv = (TextView)findViewById(R.id.tv_tank_expired_time);
+        checkedTimesTv = (TextView)findViewById(R.id.tv_checked_times);
+        barCodeTv = (TextView)findViewById(R.id.tv_bar_code);
+        tankCodeTv = (TextView)findViewById(R.id.tv_tank_code);
+        tankModelTv = (TextView)findViewById(R.id.tv_tank_model);
+        produceTimeTv = (TextView)findViewById(R.id.tv_produce_time);
+        useTimesTv = (TextView)findViewById(R.id.tv_use_times);
+        tv_operate_time = (TextView) findViewById(R.id.tv_use_operate_time);
+        tv_operate_name = (TextView) findViewById(R.id.tv_use_user_name);
+        view_show_one = findViewById(R.id.rl_show_one);
+        view_show_two = findViewById(R.id.rl_show_two);
+        btn = (TextView) findViewById(R.id.tv_pay_now);
+
+        if (from.equals("1")){
+            btn.setVisibility(View.GONE);
+            view_show_one.setVisibility(View.VISIBLE);
+            view_show_two.setVisibility(View.VISIBLE);
+        }else if (from.equals("2")){
+            btn.setVisibility(View.VISIBLE);
+            view_show_one.setVisibility(View.GONE);
+            view_show_two.setVisibility(View.GONE);
+            if (role.equals("delivery")){
+                if (!orderId.equals("")){
+                    btn.setVisibility(View.VISIBLE);
+                }else {
+                    btn.setVisibility(View.GONE);//扫一扫进入不是订单扫入配送元不可操作
+                }
+            }
+        }else if (from.equals("3")){
+            btn.setVisibility(View.VISIBLE);
+            btn.setText("扫一扫");
+            view_show_one.setVisibility(View.GONE);
+            view_show_two.setVisibility(View.GONE);
+        }else if (from.equals("4")){
+            btn.setVisibility(View.VISIBLE);
+            btn.setText("绑定");
+            view_show_one.setVisibility(View.GONE);
+            view_show_two.setVisibility(View.GONE);
+        }
+    }
+    private void initEvent(){
+        commonTitle.setOnTitleClickListener(new CommonTitle.OnTitleClickListener() {
+            @Override
+            public void onLeftClick() {
+                finish();
+            }
+
+            @Override
+            public void onRightClick() {
+
+            }
+        });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                data.clear();
+
+                if (from.equals("4")){ //补码
+                    MyOkHttpClientManager.postAsynJson(gson.toJson(new ReplaceBarBean(getAccessToken(), tankId, barId)), UrlUtils.REPLACE_CODE_URL, new MyOkHttpClientManager.StringCallback() {
+                        @Override
+                        public void onFailure(Request request, IOException e) {
+                            Toast.makeText(TankDetailActivity.this,R.string.service_error_500,Toast.LENGTH_SHORT).show();
+                        }
+
+                        @Override
+                        public void onResponse(String response) {
+                            try {
+                                ParseBaseEntity entity = gson.fromJson(response, ParseBaseEntity.class);
+                                if (entity.getCode().equals(ResponseUtils.OK)) {
+                                    Toast.makeText(context, "操作成功", Toast.LENGTH_SHORT).show();
+                                    finish();
+                                } else if(entity.getCode().equals(ErrorCode.ERR_ACCESS_TOKEN_INVALID) || entity.getCode().equals(ErrorCode.ERR_REFRESH_TOKEN_INVALID)){
+                                    EventBus.getDefault().post(Event.EXITANDLOGIN);
+                                }else {
+                                    Toast.makeText(context, entity.getMsg(), Toast.LENGTH_SHORT).show();
+                                }
+                            }catch (Exception e){
+                                Toast.makeText(TankDetailActivity.this,R.string.service_error_500,Toast.LENGTH_SHORT).show();
+                                e.printStackTrace();
+                            }
+                        }
+                    });
+
+
+                }else if (from.equals("3")){
+                    Intent intent = new Intent(context, ScanCodeActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                } else if (role.equals("delivery")){
+                    data.add(new UseBean("充气","inflate",R.mipmap.icon_aerate));
+                     data.add(new UseBean("换气","swap",R.mipmap.icon_change));
+                    data.add(new UseBean("配送","delivery",R.mipmap.icon_distribution));
+                    initBottomTwo(data);
+                }else if (role.equals("manager")){
+                    data.add(new UseBean("入库（普通）","enter_depot",R.mipmap.icon_enter_common));
+                    data.add(new UseBean("入库（例检）","wait_check",R.mipmap.icon_enter_task));
+                    data.add(new UseBean("出库","out_depot",R.mipmap.icon_output));
+                    data.add(new UseBean("例检","check",R.mipmap.icon_task));
+                    data.add(new UseBean("回收","recovery",R.mipmap.icon_recovery));
+                    data.add(new UseBean("维修","repair",R.mipmap.icon_maintenance));
+                    initBottomTwo(data);
+                }
+            }
+        });
+
+    }
+
+    private void doAction(BottomPhotoDialog dialog) {
+        if (operate_status!=null){
+            if (role.equals("manager")){
+                post_str=gson.toJson(new ActionOperateBean(getAccessToken(),tankId,operate_status,null));
+            }else if (role.equals("delivery")){
+                post_str = gson.toJson(new ActionOperateBean(getAccessToken(),tankId,operate_status,orderId));
+            }
+            changeData(post_str ,dialog);
+        }
+    }
+
+    public void changeData(String mpost_str, final BottomPhotoDialog dialog){
+        MyOkHttpClientManager.postAsynJson(mpost_str, UrlUtils.CHANGE_STATUS_GAS_URL, new MyOkHttpClientManager.StringCallback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                Toast.makeText(TankDetailActivity.this,R.string.service_error_500,Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onResponse(String response) {
+                Log.e("ssssss",response);
+                try {
+                    ParseBaseEntity entity = gson.fromJson(response, ParseBaseEntity.class);
+                    dialog.dismiss();
+                    if (entity.getCode().equals(ResponseUtils.OK)) {
+                        Toast.makeText(context, "操作成功", Toast.LENGTH_SHORT).show();
+                    }else if(entity.getCode().equals(ErrorCode.ERR_ACCESS_TOKEN_INVALID) || entity.getCode().equals(ErrorCode.ERR_REFRESH_TOKEN_INVALID)){
+                        EventBus.getDefault().post(Event.EXITANDLOGIN);
+                    } else {
+                        Toast.makeText(context, entity.getMsg(), Toast.LENGTH_SHORT).show();
+                    }
+                }catch (Exception e){
+                    Toast.makeText(TankDetailActivity.this,R.string.service_error_500,Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    private void initBottomTwo(final List<UseBean> data) {
+        final BottomPhotoDialog dialog = new BottomPhotoDialog(context,R.layout.operate_delievely_layout);
+        dialog.show();
+        View view = dialog.getView();
+        listView = (ListView) view .findViewById(R.id.ls_com);
+        btn_change = (TextView) view.findViewById(R.id.tv_change_now);
+        adapter = new MyAdapter(data);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                selectPosition = position ;
+                adapter.notifyDataSetChanged();
+                operate_status = data.get(position).operate;
+            }
+        });
+
+        btn_change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(null != operate_status){
+                    doAction(dialog);
+                }
+            }
+        });
+    }
+
+    @Override
+    public void refreshDatas(GetTankBean tank) {
+        barId = tank.getBarCode();
+        tankId = tank.getTankId();
+        usernameTv.setText(tank.getBuyerName());
+        phoneTv.setText(tank.getPhone());
+        nextCheckTimeTv.setText(tank.getNextCheckTime());
+        tankExpiredTimeTv.setText(tank.getTankExpiredTime());
+        checkedTimesTv.setText(tank.getCheckTimes());
+        barCodeTv.setText(tank.getBarCode());
+        tankCodeTv.setText(tank.getTankNumber());
+        tankModelTv.setText(tank.getModel());
+        produceTimeTv.setText(tank.getProduceTime());
+        useTimesTv.setText(tank.getCheckTimes());
+        try {
+            tv_operate_name.setText(tank.getOperater());
+            tv_operate_time.setText(tank.getOperateTime());
+        }catch (Exception e){
+
+        }
+
+    }
+
+    public class UseBean{
+        public String bean_name ;
+        public String operate ;
+        public int photo ;
+
+        public UseBean(String bean_name, String operate, int photo) {
+            this.bean_name = bean_name;
+            this.operate = operate;
+            this.photo = photo;
+        }
+
+    }
+
+    public class MyAdapter extends BaseAdapter {
+        List<UseBean> list;
+        public MyAdapter(List<UseBean> mlist) {
+            list = mlist ;
+        }
+
+        public void setData(List<UseBean> mlist){
+            list = mlist ;
+            notifyDataSetChanged();
+        }
+
+        @Override
+        public int getCount() {
+            return list.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return list.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+
+            MyViewHolder viewHolder = null ;
+            //if (convertView == null) {
+                convertView = LayoutInflater.from(context).inflate(R.layout.operate_item, null);
+                viewHolder = new MyViewHolder();
+                viewHolder.rb = (ImageView) convertView.findViewById(R.id.cb_checked);
+                viewHolder.iv = (ImageView) convertView.findViewById(R.id.iv_icon_show);
+                viewHolder.tv = (TextView) convertView.findViewById(R.id.tv_icon_show);
+                convertView.setTag(viewHolder);
+            //}else {
+              //  viewHolder = (MyViewHolder) convertView.getTag();
+            //}
+            viewHolder.tv.setText(list.get(position).bean_name);
+            viewHolder.iv.setImageResource(list.get(position).photo);
+            if(selectPosition == position){
+                viewHolder.rb.setBackgroundResource(R.drawable.cb_bg_goods_back);
+            }
+            else{
+                viewHolder.rb.setBackgroundResource(R.color.transparent);
+
+            }
+            return convertView;
+        }
+    }
+
+    public class MyViewHolder{
+        ImageView rb ;
+        TextView tv ;
+        ImageView iv ;
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        EventBus.getDefault().post("testID");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe
+    public void onEvent(Event event){
+        if (event == Event.EXITANDLOGIN) {
+            finish();
+        }
+    }
+}

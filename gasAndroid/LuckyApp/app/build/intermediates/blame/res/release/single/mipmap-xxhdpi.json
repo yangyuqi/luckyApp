@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\qrcode_scan_frame.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xxhdpi\\qrcode_scan_frame.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\barcode_torch_disable.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xxhdpi\\barcode_torch_disable.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\barcode_torch_on.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xxhdpi\\barcode_torch_on.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\barcode_torch_off.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xxhdpi\\barcode_torch_off.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\qrcode_scan_scaner.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-xxhdpi\\qrcode_scan_scaner.png"
+    }
+]

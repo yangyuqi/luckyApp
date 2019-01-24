@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.0.0\4c8d1536dba3812cc1592090dc20c47a4ed3c35e\okhttp-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4c8d1536dba3812cc1592090dc20c47a4ed3c35e">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\okhttp-2.0.0_0b127eeac62822d8734499f2a4d5d76a1a6b33a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\glide-3.7.0_1a099d9c8c9d0da4a815e1ea8cbcb56ab302d3d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_f9bcd040f122dba8cc0159ac3633025e2d7f74db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_b81a1d418743bba026f5ccacbc8a8e825b07e27b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\design\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-26.0.0-alpha1_04712b62c6b83842d860c2a35aec695a13d52c77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_52ef0a3b7a80a758a74cd15a74142bca9475ed2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_47bb39361f7ba74a078c86d259d39595ece970e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.liaoinstan.springview\library\1.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69fa933cdb0ded211ad967cd86ac50f7d1750f90">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.liaoinstan.springview-library-1.2.6_b4adb4afd3b6bba241ed76196acf652b05101b1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-26.0.0-alpha1_94cac5cbfd71462ba7e879360854e39ee90a6d15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jcore\1.1.1\jars\libs\jcore-android_v1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0149c38b9688b28e80fab18616d4e80c1906d573">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\jcore-android_v1.1.1_1c4ad99c91036e7c3be4691d938d81ef6a4a7fb9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_adb4683ee055d73d1a508243988c55eee7b74d77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.tbruyelle.rxpermissions\rxpermissions\0.9.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="80c22c5f8ef176f5afde9dcbf718ea266a74847a">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.tbruyelle.rxpermissions-rxpermissions-0.9.4_67c68d36f2ce277a273f49583c6ab85776b83f93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\gson-2.8.0_f297298fecd694d31319ef2b6511ff47befc6ed4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\com.tencent.mm.opensdk\wechat-sdk-android-without-mta\5.1.6\d78e9ebd52545fa9b23133f871744db008e7a715\wechat-sdk-android-without-mta-5.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d78e9ebd52545fa9b23133f871744db008e7a715">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\wechat-sdk-android-without-mta-5.1.6_ab55eb9599a093bec550b61ae4871c91e7d7bdae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.0.0\2534c458682c73f5b9871131ab3098d3f987ca3\okio-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="02534c458682c73f5b9871131ab3098d3f987ca3">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\okio-1.0.0_dc9ec2f0a1c80a57944eddfc5746e3ef76b67db9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jpush\3.0.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="637572952be0db98c9288fb9f9fb923a71401be1">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\cn.jiguang.sdk-jpush-3.0.3_841efcf9169c9b9b8f424c87c94d90b9ac214af6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.jakewharton.rxbinding\rxbinding\0.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ffc09f4e5bdebe068e5101f587dadc42b60fbfe4">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.jakewharton.rxbinding-rxbinding-0.4.0_bd35d58f5ab096cae6bde073d39bda8a3798f7d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.jakewharton.rxbinding\rxbinding-appcompat-v7\0.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cea3c0edbda1279bc261187fb3b6f874bfc841f4">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.jakewharton.rxbinding-rxbinding-appcompat-v7-0.4.0_005fc986e3c43a1b03551a9cd4b2b76c478abf4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jcore\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7880825917f7ad26d7fdfaa421cd1e1827d13c10">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\cn.jiguang.sdk-jcore-1.1.1_65bcb1a444f302ebd5a0f22b65bd010b8d1a5846.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.jude\rollviewpager\1.4.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5369e56159e8bd94b665f90390f262d26a57e73a">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.jude-rollviewpager-1.4.6_55688f9bcbe200bc32a361f92b8cd78dfde14c3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4c4b83de2f6412072d2a29b1b7a5b03edaad5ff">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\io.reactivex-rxandroid-1.1.0_6525fbae3c9ea63eef47452b4e83e8adff4a2b07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6fe22c135f19470d05b0816d5996c442ef67da3f">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\zxing_fdd97f81101ef6043a1c510da7e84d3cfae772e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\libs\alipaySdk-20170710.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7e9257967505ebd92083a8019ec1c6495506ddbd">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\alipaySdk-20170710_6ce13ec746276ad0444cb5db1af95f680442733b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\cn.jiguang.sdk\jpush\3.0.3\jars\libs\jpush-android_v3.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7da1fe9424ad39b3e138685e798569b7e404e8df">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\jpush-android_v3.0.3_8b5f9f3abe31ec2d6866e5b590f21faf3f88b1a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-26.0.0-alpha1_0e53c58f3322bd2999f1e08506eb873ab27708ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.0\748f0546d5c3c27f1aef07270ffea0c45f0c42a4\rxjava-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="748f0546d5c3c27f1aef07270ffea0c45f0c42a4">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\rxjava-1.1.0_ed6d2a7ddf935d0cc929d4c05c6ca28a8005ee6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-26.0.0-alpha1_eba9ab23e32bc44c818faba85df5029d259e77ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.contrarywind\Android-PickerView\3.2.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c1def4f6e8a41985b7b7af4d3b5b5d94f61d01b0">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.contrarywind-Android-PickerView-3.2.5_a8af3bedfbfcfa73572c4a2c2c6d460cee2f27eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\transition\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-transition-26.0.0-alpha1_d5775f9bec0df95e6bba35e04cc87911e1dc1dbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.10.3\b842f960942503cf1abbcc8c173a7f2c19d43726\jsoup-1.10.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b842f960942503cf1abbcc8c173a7f2c19d43726">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\jsoup-1.10.3_1c355a86dfad2adfd63affdff19a27102b413662.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-26.0.0-alpha1_51c3171d09d53567229b24a0538b4ef2d73a9063.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_9a1c728fba3fdc9633ad5f9870064a85024c19ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_999fa294440608cb3275fddc82686c9315da5608.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.hedgehog.ratingbar\app\1.1.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1d44591ba0874a48bc2c8c32f636697d6997e232">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.hedgehog.ratingbar-app-1.1.2_c97b7fd8c121568d0378536796ac0d39a0da6bce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\me.iwf.photopicker\PhotoPicker\0.9.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="158bd4ae15436b1649ca51808287f4540e8bf9ad">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\me.iwf.photopicker-PhotoPicker-0.9.0_24725d5da3bc412641b2c481b92f416b6dfca84a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\eventbus-3.0.0_d59684545d2483b647f54572124c452fec3d3346.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\yangyuqi\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_2b4dc2e04d02bd64dae09033924038efe0a9cd85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\android\gasAndroid\LuckyApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\android\gasAndroid\LuckyApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_2f784930f9da8f1d4ee69e4f3646e692952fa2f0.jar" />
+    </item>
+
+</items>

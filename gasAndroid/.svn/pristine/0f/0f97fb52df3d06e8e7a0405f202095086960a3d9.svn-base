@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingRight="@dimen/space_15"
+        android:paddingLeft="@dimen/space_15"
+        android:background="@drawable/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/home_page_iv_scan"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/scan_code_bg"
+            />
+
+        <ImageView
+            android:id="@+id/home_page_iv_message"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_code_bg"
+            />
+
+        <RelativeLayout
+            android:id="@+id/home_page_rl_parent"
+            android:alpha="100"
+            android:background="@drawable/search_round_bg"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_toRightOf="@+id/home_page_iv_scan"
+            android:layout_toLeftOf="@+id/home_page_iv_message"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            >
+            <TextView
+                android:paddingRight="30dp"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingTop="@dimen/space_5"
+                android:id="@+id/home_page_rl_search"
+                android:clickable="true"
+                android:textSize="@dimen/text_size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/space_15"
+                android:drawableLeft="@drawable/btn_search_bg"
+                android:text="商品名称"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/space_5"
+                android:textColor="@color/text_white"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homepage_spring_view"
+        app:type="follow"
+        app:header="@layout/default_header"
+        app:footer="@layout/default_footer"
+        >
+
+        <ScrollView
+            android:scrollbars="none"
+            android:id="@+id/scroll_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/roll_view_pager"
+        app:rollviewpager_play_delay="3000"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+    </com.jude.rollviewpager.RollPagerView>
+
+    <TextView
+        android:background="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="- 热门推荐 -"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="@color/text_black"
+        />
+
+     <com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView
+         android:listSelector="@android:color/transparent"
+         android:divider="@null"
+         android:id="@+id/home_page_ls"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     </com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView>
+</LinearLayout>
+    </ScrollView>
+</com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

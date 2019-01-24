@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:padding="@dimen/space_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <com.yunqilai.consumer.luckyapp.Common.Ui.CircleImageView
+            android:id="@+id/discuss_ls_item_civ"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"
+            />
+
+            <TextView
+                android:layout_toRightOf="@+id/discuss_ls_item_civ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/ratingbar_one"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                hedgehog:starCount="5"
+                hedgehog:clickable="true"
+                hedgehog:starEmpty="@drawable/btn_star"
+                hedgehog:starFill="@drawable/btn_star_hl"
+                hedgehog:starImageSize="20dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/discuss_ls_item_civ"
+                android:layout_toLeftOf="@+id/ratingbar_one"
+                >
+
+                <TextView
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:id="@+id/discuss_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:text="工作"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:id="@+id/discuss_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/discuss_tv_name"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="2017-6-2"
+                    />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/discuss_tv_time"
+                    android:layout_below="@+id/discuss_tv_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="爱神的箭爱丽丝大受打击爱死了大量地方大家卡萨丁阿萨德爱神的箭啊"
+            />
+
+        <com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView
+            android:id="@+id/gv_gv_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:numColumns="3"
+            ></com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView>
+        
+    </LinearLayout>
+
+</LinearLayout>

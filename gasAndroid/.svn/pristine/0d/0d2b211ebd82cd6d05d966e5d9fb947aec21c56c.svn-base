@@ -1,0 +1,160 @@
+package com.yunqilai.delivery.ui.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import com.yunqilai.delivery.R;
+import com.yunqilai.delivery.manager.SharedPreferencesUtil;
+import com.yunqilai.delivery.ui.activity.common.LoginActivity;
+import com.yunqilai.delivery.ui.adapter.CommonFragmentPagerAdapter;
+import com.yunqilai.delivery.ui.fragment.attestation.AttestationFragment;
+import com.yunqilai.delivery.ui.fragment.dispatch.DispatchFragment;
+import com.yunqilai.delivery.ui.fragment.infomanage.InfoManageFragment;
+import com.yunqilai.delivery.ui.fragment.infomanage.NewInfoManageFragment;
+import com.yunqilai.delivery.ui.fragment.my.MyFragment;
+import com.yunqilai.delivery.ui.fragment.order.NewOrderFragment;
+import com.yunqilai.delivery.ui.fragment.order.OrderFragment;
+import com.yunqilai.delivery.ui.view.FixedSpeedViewPager;
+import com.yunqilai.delivery.ui.view.NoScrollViewPager;
+import com.yunqilai.delivery.utils.Event;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends BaseFragmentActivity {
+
+    private FixedSpeedViewPager viewPager;
+    private List<Fragment> mListFragement;
+    private RadioGroup radioGroup;
+
+    private int currPosition = 0;
+    private RadioButton rb ;
+    private String type ;
+
+    private RadioButton rb_send ,rb_order ,rb_info;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EventBus.getDefault().register(this);
+        setContentView(R.layout.activity_main);
+
+        type = (String) SharedPreferencesUtil.get(context,SharedPreferencesUtil.role,"");
+
+        initView();
+        initEvent();
+        initData();
+    }
+
+    private void initView(){
+        viewPager = (FixedSpeedViewPager) findViewById(R.id.vp_content);
+        radioGroup = (RadioGroup) findViewById(R.id.rg_footer);
+
+        rb_send = (RadioButton) findViewById(R.id.foot_bar_home);
+        rb_order = (RadioButton) findViewById(R.id.foot_bar_im2);
+        rb_info = (RadioButton) findViewById(R.id.foot_bar_im);
+        if (type.equals("delivery")){
+            rb_send.setText("派单");
+            rb_send.setVisibility(View.VISIBLE);
+            rb_order.setVisibility(View.GONE);
+        }else if (type.equals("manager")){
+            rb_info.setText("信息管理");
+            rb_send.setVisibility(View.GONE);
+            rb_order.setVisibility(View.VISIBLE);
+        }
+        viewPager.setScrollble(false);
+    }
+
+    private void initEvent(){
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                int index = -1;
+                switch (radioGroup.getCheckedRadioButtonId()){
+                    case R.id.foot_bar_home : index = 0 ;
+                        break;
+                    case R.id.foot_bar_im : index = 1 ;
+                        break;
+                    case R.id.foot_bar_im2 : index = 2 ;
+                        break;
+                    case R.id.foot_bar_interest : index = 3 ;
+                        break;
+                    case R.id.main_footbar_user : index = 4 ;
+                        break;
+                }
+                if(index != -1){
+                    viewPager.setCurrentItem(index);
+                }
+            }
+        });
+    }
+
+    private void initData(){
+
+        mListFragement = new ArrayList<>();
+        NewOrderFragment newOrderFragment1 = new NewOrderFragment();
+        newOrderFragment1.setShowResult(true);
+        mListFragement.add(newOrderFragment1);
+        mListFragement.add(new NewInfoManageFragment());
+        NewOrderFragment newOrderFragment2 = new NewOrderFragment();
+        newOrderFragment2.setShowResult(false);
+        mListFragement.add(newOrderFragment2);
+        mListFragement.add(AttestationFragment.newInstance());
+        mListFragement.add(MyFragment.newInstance());
+
+        viewPager.setAdapter(new CommonFragmentPagerAdapter(getSupportFragmentManager(), mListFragement));
+        viewPager.setOffscreenPageLimit(mListFragement.size());
+
+        if (type.equals("manager")) {
+            viewPager.setCurrentItem(1);
+            rb_info.setChecked(true);
+        }else {
+            viewPager.setCurrentItem(currPosition);
+        }
+    }
+    @Subscribe
+    public void onEvent(Event event){
+        if (event == Event.EXITANDLOGIN) {
+            String phone = (String) SharedPreferencesUtil.get(context,SharedPreferencesUtil.mobile,"");
+            SharedPreferencesUtil.clear(context);
+            SharedPreferencesUtil.put(context,SharedPreferencesUtil.isFristUse,false);
+            SharedPreferencesUtil.put(context,SharedPreferencesUtil.mobile,phone);
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
+
+
+    private long exitTime = 0;
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK
+                && event.getAction() == KeyEvent.ACTION_DOWN) {
+            if ((System.currentTimeMillis() - exitTime) > 2000) {
+                Toast.makeText(getApplicationContext(),
+                        R.string.tip_exit, Toast.LENGTH_SHORT).show();
+                exitTime = System.currentTimeMillis();
+            } else {
+                finish();
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+}

@@ -1,0 +1,76 @@
+package com.yunqilai.consumer.luckyapp.HomePage.Presenter;
+
+import android.util.Log;
+import android.view.View;
+
+import com.yunqilai.consumer.luckyapp.Common.Base.BasePresenterActivity;
+import com.yunqilai.consumer.luckyapp.Common.RxBus;
+import com.yunqilai.consumer.luckyapp.HomePage.Model.BottleInfoBean;
+import com.yunqilai.consumer.luckyapp.HomePage.View.BottleInfoView;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import rx.Subscription;
+import rx.functions.Action1;
+
+/**
+ * Created by Administrator on 2017/6/3.
+ */
+
+public class BottleInfoActivity extends BasePresenterActivity<BottleInfoView> {
+
+    BottleInfoBean bean ;
+
+    @Override
+    protected Class<BottleInfoView> getViewClass() {
+        return BottleInfoView.class;
+    }
+
+    @Override
+    protected void onBindView() {
+        super.onBindView();
+        EventBus.getDefault().register(this);
+
+        vu.getIv_back().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+
+    @Override
+    protected void onDestroyVu() {
+        super.onDestroyVu();
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe
+    public void onEvent(BottleInfoBean bottleInfoBean){
+        bean = bottleInfoBean ;
+
+        initData();
+    }
+
+    private void initData() {
+        if (bean!= null){
+            vu.getTv_phone().setText((bean.getPhone()));
+            vu.getTv_create_time().setText(bean.getProduceTime());
+            vu.getTv_name().setText(bean.getBuyerName());
+            vu.getTv_time().setText((bean.getNextCheckTime()));
+            vu.getTv_id_id().setText(bean.getBarCode());
+            vu.getTv_time_time().setText(bean.getTankExpiredTime());
+            vu.getTv_count().setText(bean.getCheckTimes());
+            vu.getTv_id().setText((bean.getTankNumber()));
+            vu.getTv_model().setText(bean.getModel());
+            vu.getTv_create_time().setText(bean.getProduceTime());
+            vu.getTv_uses_num().setText(bean.getUseTimes());
+            try {
+                vu.getTv_num_id().setText(bean.getIdCardNumber());
+                vu.getTv_address().setText(bean.getAddress());
+            }catch (Exception e){}
+        }
+    }
+}

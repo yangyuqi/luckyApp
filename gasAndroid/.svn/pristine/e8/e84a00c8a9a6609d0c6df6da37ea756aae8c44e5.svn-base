@@ -1,0 +1,563 @@
+package com.yunqilai.delivery.ui.fragment.order;
+
+import android.Manifest;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.liaoinstan.springview.widget.SpringView;
+import com.squareup.okhttp.Request;
+import com.tbruyelle.rxpermissions.RxPermissions;
+import com.yunqilai.delivery.R;
+import com.yunqilai.delivery.manager.SharedPreferencesUtil;
+import com.yunqilai.delivery.model.Bean.OrderAllBean;
+import com.yunqilai.delivery.model.Bean.OrderDetailsBean;
+import com.yunqilai.delivery.model.Bean.ParseBaseEntity;
+import com.yunqilai.delivery.model.Bean.ParseOrderBean;
+import com.yunqilai.delivery.model.Bean.home.GetOrderBean;
+import com.yunqilai.delivery.request.base.ErrorCode;
+import com.yunqilai.delivery.ui.Dialog.DeleteDialog;
+import com.yunqilai.delivery.ui.activity.MainActivity;
+import com.yunqilai.delivery.ui.activity.order.OrderDetailActivity;
+import com.yunqilai.delivery.ui.activity.order.SearchOrderActivity;
+import com.yunqilai.delivery.ui.fragment.attestation.AttestationFragment;
+import com.yunqilai.delivery.ui.interf.DeleteDialogInterface;
+import com.yunqilai.delivery.ui.view.CommonTitle;
+import com.yunqilai.delivery.utils.ComStringUtils;
+import com.yunqilai.delivery.utils.Event;
+import com.yunqilai.delivery.utils.MyOkHttpClientManager;
+import com.yunqilai.delivery.utils.ResponseUtils;
+import com.yunqilai.delivery.utils.UrlUtils;
+import com.yunqilai.delivery.utils.adapter.CommonAdapter;
+import com.yunqilai.delivery.utils.adapter.ViewHolder;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import rx.functions.Action1;
+
+/**
+ * Created by yangyuqi on 17-7-26.
+ */
+
+public class NewOrderFragment extends BaseBaseFragment {
+
+    private boolean showResult = true;
+    DecimalFormat df   = new DecimalFormat("######0.00");
+    private CommonTitle commonTitle ;
+    private TextView tv_num ;
+    private View view ;
+    private TabLayout tb ;
+    private String type ,string;
+    private ListView ls ;
+
+    private List<OrderDetailsBean> wait_orderData = new ArrayList<>();
+    private List<OrderDetailsBean> wait_pickupData = new ArrayList<>();
+    private List<OrderDetailsBean> wait_deliveryData = new ArrayList<>();
+    private List<OrderDetailsBean> completeData = new ArrayList<>();
+    private List<OrderDetailsBean> self_wait_extractData = new ArrayList<>();
+    private List<OrderDetailsBean> self_completeData = new ArrayList<>();
+
+    private int wait_orderpageNum = 1;
+    private int wait_pickuppageNum = 1;
+    private int wait_deliverypageNum = 1;
+    private int completepageNum = 1;
+    private int self_wait_extractpageNum = 1;
+    private int self_completepageNum = 1;
+
+
+
+    private CommonAdapter<OrderDetailsBean> adapter ;
+
+    private SpringView spring_view ;
+    private View no_data ;
+
+    public void setShowResult(boolean result) {
+        showResult = result;
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.new_order_fragment,null);
+        initView(view);
+        EventBus.getDefault().register(this);
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+//        if (type.equals("delivery")) {
+//            initData("wait_order");
+//        }else if (type.equals("manager")){
+//            initData("self_wait_extract");
+//        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (type.equals("delivery")) {
+
+            if(null == string || "".equals(string)){
+                string = "wait_order";
+            }
+            wait_orderpageNum = 1;
+            initData(string,wait_orderpageNum);
+        }else if (type.equals("manager")){
+            string = "self_wait_extract";
+            self_wait_extractpageNum = 1;
+            initData(string,self_wait_extractpageNum);
+        }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
+    }
+
+    private void initData(String s, final int pagenum) {
+        string = s ;
+
+        String type = gson.toJson(new OrderAllBean(getAccessToken(),s,pagenum,30));
+        MyOkHttpClientManager.postAsynJson(type, UrlUtils.GET_ALL_ORDER_URL, new MyOkHttpClientManager.StringCallback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                Toast.makeText(context,R.string.service_error_500,Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onResponse(String response) {
+                spring_view.onFinishFreshAndLoad();
+                switch (string){
+                    case "wait_order":
+                        if(pagenum == 1){
+                            wait_orderData.clear();
+                        }
+                        break;
+                    case "wait_pickup":
+                        if(pagenum == 1){
+                            wait_pickupData.clear();
+                        }
+                        break;
+                    case "wait_delivery":
+                        if(pagenum == 1){
+                            wait_deliveryData.clear();
+                        }
+                        break;
+                    case "complete":
+                        if(pagenum == 1){
+                            completeData.clear();
+                        }
+                        break;
+                    case "self_wait_extract":
+                        if(pagenum == 1){
+                            self_wait_extractData.clear();
+                        }
+                        break;
+                    case "self_complete":
+                        if(pagenum == 1){
+                            self_completeData.clear();
+                        }
+                        break;
+                }
+                try {
+                    ParseOrderBean bean = gson.fromJson(response, ParseOrderBean.class);
+                    if (bean.getCode().equals(ResponseUtils.OK)) {
+                        tv_num.setText("" + bean.getData().getCount());
+                        if (bean.getData().getOrders().size() > 0) {
+                            switch (string){
+                                case "wait_order":
+                                        wait_orderData.addAll(bean.getData().getOrders());
+                                    adapter.setData(wait_orderData);
+                                    break;
+                                case "wait_pickup":
+                                        wait_pickupData.addAll(bean.getData().getOrders());
+                                    adapter.setData(wait_pickupData);
+                                    break;
+                                case "wait_delivery":
+                                        wait_deliveryData.addAll(bean.getData().getOrders());
+                                    adapter.setData(wait_deliveryData);
+                                    break;
+                                case "complete":
+                                        completeData.addAll(bean.getData().getOrders());
+                                    adapter.setData(completeData);
+                                    break;
+                                case "self_wait_extract":
+                                        self_wait_extractData.addAll(bean.getData().getOrders());
+                                    adapter.setData(self_wait_extractData);
+                                    break;
+                                case "self_complete":
+                                        self_completeData.addAll(bean.getData().getOrders());
+                                    adapter.setData(self_completeData);
+                                    break;
+                            }
+                            adapter.notifyDataSetChanged();
+                        } else {
+                            switch (string){
+                                case "wait_order":
+                                    wait_orderData.addAll(bean.getData().getOrders());
+                                    adapter.setData(wait_orderData);
+                                    break;
+                                case "wait_pickup":
+                                    wait_pickupData.addAll(bean.getData().getOrders());
+                                    adapter.setData(wait_pickupData);
+                                    break;
+                                case "wait_delivery":
+                                    wait_deliveryData.addAll(bean.getData().getOrders());
+                                    adapter.setData(wait_deliveryData);
+                                    break;
+                                case "complete":
+                                    completeData.addAll(bean.getData().getOrders());
+                                    adapter.setData(completeData);
+                                    break;
+                                case "self_wait_extract":
+                                    self_wait_extractData.addAll(bean.getData().getOrders());
+                                    adapter.setData(self_wait_extractData);
+                                    break;
+                                case "self_complete":
+                                    self_completeData.addAll(bean.getData().getOrders());
+                                    adapter.setData(self_completeData);
+                                    break;
+                            }
+                            adapter.notifyDataSetChanged();
+                        }
+                    }else if(bean.getCode().equals(ErrorCode.ERR_ACCESS_TOKEN_INVALID) || bean.getCode().equals(ErrorCode.ERR_REFRESH_TOKEN_INVALID)){
+                        EventBus.getDefault().post(Event.EXITANDLOGIN);
+                    }
+                }catch (Exception e){
+                    Toast.makeText(context,R.string.service_error_500,Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    private void initView(View view) {
+        type = (String) SharedPreferencesUtil.get(context,SharedPreferencesUtil.role,"");
+        tb = (TabLayout) view.findViewById(R.id.tab_dispatch);
+        ls = (ListView) view.findViewById(R.id.lv_order_list);
+        tv_num = (TextView) view.findViewById(R.id.tv_order_count);
+        commonTitle = (CommonTitle) view.findViewById(R.id.common_title);
+        spring_view = (SpringView) view.findViewById(R.id.spring_view);
+        no_data = view.findViewById(R.id.rl_no_data);
+        ls.setEmptyView(no_data);
+        if (type.equals("delivery")){
+            tb.addTab(tb.newTab().setText(R.string.head_wait_order));
+            tb.addTab(tb.newTab().setText(R.string.head_wait_pickup));
+            tb.addTab(tb.newTab().setText(R.string.head_wait_delivery));
+            tb.addTab(tb.newTab().setText(R.string.head_complete));
+        }else if (type.equals("manager")){
+            commonTitle.setTitle("订单");
+            commonTitle.setRightIcon(R.mipmap.btn_find);
+            commonTitle.showRight(true);
+            tb.addTab(tb.newTab().setText("待提取"));
+            tb.addTab(tb.newTab().setText("已完成"));
+        }
+        List<OrderDetailsBean> data = new ArrayList<>();
+
+
+        adapter = new CommonAdapter<OrderDetailsBean>(context,data,R.layout.listview_order_list) {
+            @Override
+            public void convert(ViewHolder helper, final OrderDetailsBean item) {
+                helper.setText(R.id.tv_order_id,item.getOrderNumber());
+                helper.setText(R.id.tv_order_pay_type, ComStringUtils.getPayType(item.getPayType()));
+                helper.setText(R.id.tv_username,item.getBuyerName());
+                helper.setText(R.id.tv_phone,item.getPhone());
+                helper.setText(R.id.tv_address,item.getAddress());
+                helper.setText(R.id.tv_count,String.valueOf(item.getGoodsCount()));
+                helper.setText(R.id.tv_price,String.valueOf(df.format(item.getTotalPrice())));
+                helper.setText(R.id.tv_delivery_time,item.getShipTime() +"配送");
+                if(showResult) {
+                    helper.getView(R.id.ll_delivery_time).setVisibility(View.VISIBLE);
+                }else{
+                    helper.getView(R.id.ll_delivery_time).setVisibility(View.GONE);
+                }
+                try {
+                    switch (item.getPayType()) {
+                        case "0":
+                            helper.setText(R.id.label_wait_pay_,getResources().getString(R.string.lable_payed_));
+                            break;
+                        case "1":
+                            helper.setText(R.id.label_wait_pay_,getResources().getString(R.string.label_wait_pay_));
+                            break;
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+
+
+                View view_bottom= helper.getView(R.id.rl_show_btn);
+                TextView btn_accept = helper.getView(R.id.iv_pick);
+                final ImageView imageView = helper.getView(R.id.iv_phone);
+                imageView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        final DeleteDialog dialog = new DeleteDialog(context,"拨号",item.getPhone(),"确认");
+                        dialog.show();
+                        dialog.OnDeleteBtn(new DeleteDialogInterface() {
+                            @Override
+                            public void isDelete(boolean isdelete) {
+                                if (isdelete){
+                                    dialog.dismiss();
+                                    RxPermissions permissions = new RxPermissions((MainActivity)context);
+                                    permissions.request(Manifest.permission.CALL_PHONE).subscribe(new Action1<Boolean>() {
+                                        @Override
+                                        public void call(Boolean aBoolean) {
+                                            if (aBoolean){
+                                                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+item.getPhone()));
+                                                context.startActivity(intent);
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+                        });
+                    }
+                });
+
+                if (string.equals("self_wait_extract")&&type.equals("manager")){
+                    view_bottom.setVisibility(View.VISIBLE);
+                    btn_accept.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            final DeleteDialog dialog = new DeleteDialog(context,"提示","请您是否确认提取","确定");
+                            dialog.show();
+                            dialog.OnDeleteBtn(new DeleteDialogInterface() {
+                                @Override
+                                public void isDelete(boolean isdelete) {
+                                    if (isdelete){
+                                        String mtype = gson.toJson(new GetOrderBean(getAccessToken(), item.getOrderId(), "sure_pick", null) );
+                                        MyOkHttpClientManager.postAsynJson(mtype, UrlUtils.CHANGE_ORDER_STATUS_URL, new MyOkHttpClientManager.StringCallback() {
+                                            @Override
+                                            public void onFailure(Request request, IOException e) {
+                                                Toast.makeText(context,R.string.service_error_500,Toast.LENGTH_SHORT).show();
+                                            }
+
+                                            @Override
+                                            public void onResponse(String response) {
+                                                try {
+                                                    ParseBaseEntity entity = gson.fromJson(response, ParseBaseEntity.class);
+                                                    if (entity.getCode().equals(ResponseUtils.OK)) {
+                                                        dialog.dismiss();
+                                                        self_wait_extractpageNum = 1;
+                                                        initData(string,self_wait_extractpageNum);
+                                                    }else if(entity.getCode().equals(ErrorCode.ERR_ACCESS_TOKEN_INVALID) || entity.getCode().equals(ErrorCode.ERR_REFRESH_TOKEN_INVALID)){
+                                                        EventBus.getDefault().post(Event.EXITANDLOGIN);
+                                                    } else {
+                                                        Toast.makeText(context, entity.getMsg(), Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }catch (Exception e){
+                                                    e.printStackTrace();
+                                                }
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+                        }
+                    });
+                }else {
+                    view_bottom.setVisibility(View.GONE);
+                }
+            }
+        };
+
+        ls.setAdapter(adapter);
+
+        tb.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if (type.equals("delivery")){
+                    switch (tab.getPosition()){
+                        case 0 : initData("wait_order",1); break;
+                        case 1 : initData("wait_pickup",1);break;
+                        case 2 : initData("wait_delivery",1);break;
+                        case 3 : initData("complete",1);break;
+                    }
+                }else if (type.equals("manager")){
+                    switch (tab.getPosition()){
+                        case 0 : initData("self_wait_extract",1);break;
+                        case 1 : initData("self_complete",1);break;
+
+                    }
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        ls.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                try {
+                    Intent intent = new Intent(getActivity(), OrderDetailActivity.class);
+
+                    switch (string){
+                        case "wait_order":
+                            intent.putExtra("orderId", wait_orderData.get(position).getOrderId());
+                            break;
+                        case "wait_pickup":
+                            intent.putExtra("orderId", wait_pickupData.get(position).getOrderId());
+                            break;
+                        case "wait_delivery":
+                            intent.putExtra("orderId", wait_deliveryData.get(position).getOrderId());
+                            break;
+                        case "complete":
+                            intent.putExtra("orderId", completeData.get(position).getOrderId());
+                            break;
+                        case "self_wait_extract":
+                            intent.putExtra("orderId", self_wait_extractData.get(position).getOrderId());
+                            break;
+                        case "self_complete":
+                            intent.putExtra("orderId", self_completeData.get(position).getOrderId());
+                            break;
+                    }
+                    startActivity(intent);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        spring_view.setListener(new SpringView.OnFreshListener() {
+            @Override
+            public void onRefresh() {
+                switch (string){
+                    case "wait_order":
+                        wait_orderpageNum = 1;
+                        initData(string,wait_orderpageNum);
+                        break;
+                    case "wait_pickup":
+                        wait_pickuppageNum = 1;
+                        initData(string,wait_pickuppageNum);
+                        break;
+                    case "wait_delivery":
+                        wait_deliverypageNum = 1;
+                        initData(string,wait_deliverypageNum);
+                        break;
+                    case "complete":
+                        completepageNum = 1;
+                        initData(string,completepageNum);
+                        break;
+                    case "self_wait_extract":
+                        self_wait_extractpageNum = 1;
+                        initData(string,self_wait_extractpageNum);
+                        break;
+                    case "self_complete":
+                        self_completepageNum = 1;
+                        initData(string,self_completepageNum);
+                        break;
+                }
+            }
+
+            @Override
+            public void onLoadmore() {
+                spring_view.onFinishFreshAndLoad();
+
+                switch (string){
+                    case "wait_order":
+                        ++wait_orderpageNum;
+                        initData(string,wait_orderpageNum);
+                        break;
+                    case "wait_pickup":
+                        ++wait_pickuppageNum;
+                        initData(string,wait_pickuppageNum);
+                        break;
+                    case "wait_delivery":
+                        ++wait_deliverypageNum;
+                        initData(string,wait_deliverypageNum);
+                        break;
+                    case "complete":
+                        ++completepageNum;
+                        initData(string,completepageNum);
+                        break;
+                    case "self_wait_extract":
+                        ++self_wait_extractpageNum;
+                        initData(string,self_wait_extractpageNum);
+                        break;
+                    case "self_complete":
+                        ++self_completepageNum;
+                        initData(string,self_completepageNum);
+                        break;
+                }
+            }
+        });
+
+        commonTitle.setOnTitleClickListener(new CommonTitle.OnTitleClickListener() {
+            @Override
+            public void onLeftClick() {
+
+            }
+
+            @Override
+            public void onRightClick() {
+
+                if (type.equals("manager")){
+                    Intent intent = new Intent(context, SearchOrderActivity.class);
+                    startActivity(intent);
+                }
+
+            }
+        });
+    }
+
+    @Subscribe
+    public void onEvent(Boolean refresh){
+        if (refresh){
+            switch (string){
+                case "wait_order":
+                    wait_orderpageNum = 1;
+                    initData(string,wait_orderpageNum);
+                    break;
+                case "wait_pickup":
+                    wait_pickuppageNum = 1;
+                    initData(string,wait_pickuppageNum);
+                    break;
+                case "wait_delivery":
+                    wait_deliverypageNum = 1;
+                    initData(string,wait_deliverypageNum);
+                    break;
+                case "complete":
+                    completepageNum = 1;
+                    initData(string,completepageNum);
+                    break;
+                case "self_wait_extract":
+                    self_wait_extractpageNum = 1;
+                    initData(string,self_wait_extractpageNum);
+                    break;
+                case "self_complete":
+                    self_completepageNum = 1;
+                    initData(string,self_completepageNum);
+                    break;
+            }
+        }
+    }
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@color/bg_white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_pay" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_25"
+                            android:text="支付方式 :"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <TextView
+                            android:id="@+id/tv_pay_way"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginTop="@dimen/text_size_25"
+                            android:text="支付宝支付"
+                            android:textColor="@color/text_blue"
+                            android:textSize="@dimen/text_size_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单金额 :"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <TextView
+                            android:id="@+id/tv_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:text=""
+                            android:textColor="@color/text_orgin"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_25"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/order_tv"
+                            android:layout_width="150dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/round_blue_bg"
+                            android:gravity="center"
+                            android:text="查看订单"
+                            android:textColor="@color/text_blue"
+                            android:textSize="@dimen/text_size_17" />
+
+                        <TextView
+                            android:id="@+id/tv_back"
+                            android:layout_width="150dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="@dimen/space_15"
+                            android:background="@drawable/round_blue_bg"
+                            android:gravity="center"
+                            android:text="返回首页"
+                            android:textColor="@color/text_blue"
+                            android:textSize="@dimen/text_size_17" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg_white"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/space_15"
+                android:paddingTop="@dimen/space_15"
+                android:text="推荐商品"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView
+                android:id="@+id/pay_success_no_gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white"
+                android:horizontalSpacing="@dimen/space_10"
+                android:numColumns="2"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:verticalSpacing="@dimen/space_10"></com.yunqilai.consumer.luckyapp.Common.Ui.NoScrollGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

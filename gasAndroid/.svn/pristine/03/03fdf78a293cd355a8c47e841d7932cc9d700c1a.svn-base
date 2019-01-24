@@ -1,0 +1,157 @@
+package com.yunqilai.delivery.ui.presenter.my;
+
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Environment;
+import android.os.Handler;
+import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.squareup.okhttp.Request;
+import com.yunqilai.delivery.R;
+import com.yunqilai.delivery.model.Bean.ParseBaseEntity;
+import com.yunqilai.delivery.model.Bean.my.AndroidTypeBean;
+import com.yunqilai.delivery.model.Bean.my.DownLoadBean;
+import com.yunqilai.delivery.request.base.ErrorCode;
+import com.yunqilai.delivery.ui.Dialog.DeleteDialog;
+import com.yunqilai.delivery.ui.activity.my.AboutUsActivity;
+import com.yunqilai.delivery.ui.activity.my.AccountsSecurityActivity;
+import com.yunqilai.delivery.ui.activity.my.DispatchMatterActivity;
+import com.yunqilai.delivery.ui.activity.my.DispatchStatisticsActivity;
+import com.yunqilai.delivery.ui.interf.DeleteDialogInterface;
+import com.yunqilai.delivery.ui.interlayer.my.MyInterlayer;
+import com.yunqilai.delivery.ui.presenter.AbsPresenter;
+import com.yunqilai.delivery.ui.view.ToastUtil;
+import com.yunqilai.delivery.utils.Event;
+import com.yunqilai.delivery.utils.MyOkHttpClientManager;
+import com.yunqilai.delivery.utils.ResponseUtils;
+import com.yunqilai.delivery.utils.StringUtils;
+import com.yunqilai.delivery.utils.UrlUtils;
+
+import org.greenrobot.eventbus.EventBus;
+
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * Created by KK on 2017/6/8.
+ */
+
+public class MyPresenter extends AbsPresenter<MyInterlayer> {
+    public MyPresenter(Context context, MyInterlayer interlayer) {
+        super(context, interlayer);
+    }
+
+    /**
+     * 修改头像
+     */
+    public void modifyHeadIcon(){
+
+    }
+
+    public void enterDispatchStatistics(){
+        Intent intent = new Intent(mContext, DispatchStatisticsActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void enterDispatchMatter(){
+        Intent intent = new Intent(mContext, DispatchMatterActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void enterAccountsSecurity(){
+        Intent intent = new Intent(mContext, AccountsSecurityActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void enterAboutUs(){
+        Intent intent = new Intent(mContext, AboutUsActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void cleanCache(){
+        final DeleteDialog dialog = new DeleteDialog(mContext,"提示","确定要清除缓存吗?","确定");
+        dialog.show();
+        dialog.OnDeleteBtn(new DeleteDialogInterface() {
+            @Override
+            public void isDelete(boolean isdelete) {
+                if (isdelete){
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(mContext,"清除缓存成功",Toast.LENGTH_SHORT).show();
+                            dialog.dismiss();
+                        }
+                    },1500);
+                }
+            }
+        });
+    }
+    public void checkUpdate(){
+        final Gson gson = new Gson();
+        MyOkHttpClientManager.postAsynJson(gson.toJson(new AndroidTypeBean("android")), UrlUtils.UPDATE_APP_URL, new MyOkHttpClientManager.StringCallback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                Toast.makeText(mContext, R.string.service_error_500,Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onResponse(String response) {
+                try {
+                    ParseBaseEntity entity = gson.fromJson(response, ParseBaseEntity.class);
+                    if (entity.getCode().equals(ResponseUtils.OK)) {
+                        final DownLoadBean bean = gson.fromJson(gson.toJson(entity.getData()), DownLoadBean.class);
+                        int result = StringUtils.compareVersion(bean.getVersion(),StringUtils.getAppVersionName(mContext));
+                        if (result > 0) {
+                            DeleteDialog show_dialog = new DeleteDialog(mContext, "当前版本号" + StringUtils.getAppVersionName(mContext), "发现新版本"+bean.getVersion(), "去更新");
+                            show_dialog.OnDeleteBtn(new DeleteDialogInterface() {
+                                @Override
+                                public void isDelete(boolean isdelete) {
+                                    if (isdelete) {
+                                        final ProgressDialog dialog2 = ProgressDialog.show(mContext, "提示", "正在下载新的版本");
+                                        dialog2.show();
+                                              MyOkHttpClientManager.downloadAsyn(UrlUtils.PHOTO_URL_BASE+bean.getAddress(), Environment.getExternalStorageDirectory().getPath(), new MyOkHttpClientManager.StringCallback() {
+                                                  @Override
+                                                  public void onFailure(Request request, IOException e) {
+
+                                                  }
+
+                                                  @Override
+                                                  public void onResponse(String response) {
+                                                      if (!response.equals("")){
+                                                          dialog2.dismiss();
+                                                          File file = new File(response);
+                                                          Intent intent = new Intent(Intent.ACTION_VIEW);
+                                                          //设置intent的数据类型是应用程序application
+                                                          intent.setDataAndType(Uri.parse("file://" + file.toString()), "application/vnd.android.package-archive");
+                                                          //为这个新apk开启一个新的activity栈
+                                                          intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                          //开始安装
+                                                          mContext.startActivity(intent);
+                                                          //关闭旧版本的应用程序的进程
+                                                          android.os.Process.killProcess(android.os.Process.myPid());
+                                                      }
+                                                  }
+                                              });
+                                    }
+                                }
+                            });
+                            show_dialog.show();
+                        } else {
+                            Toast.makeText(mContext, "无需更新最新版本", Toast.LENGTH_SHORT).show();
+                        }
+                    }else if(entity.getCode().equals(ErrorCode.ERR_ACCESS_TOKEN_INVALID) || entity.getCode().equals(ErrorCode.ERR_REFRESH_TOKEN_INVALID)){
+                        EventBus.getDefault().post(Event.EXITANDLOGIN);
+                    }
+                }catch (Exception e){
+                    Toast.makeText(mContext, R.string.service_error_500,Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+            }
+        });
+
+    }
+
+
+    public void logout(){
+        interlayer.toLogin();
+    }
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_home_fill.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-hdpi\\ic_home_fill.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_love_empty.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-hdpi\\ic_love_empty.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_home_empty.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-hdpi\\ic_home_empty.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_star_empty.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-hdpi\\ic_star_empty.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_love_fill.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-hdpi\\ic_love_fill.png"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_star_fill.png",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\com.hedgehog.ratingbar\\app\\1.1.2\\res\\mipmap-hdpi\\ic_star_fill.png"
+    }
+]

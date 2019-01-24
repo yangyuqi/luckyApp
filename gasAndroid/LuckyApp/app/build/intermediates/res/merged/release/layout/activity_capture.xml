@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/sv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/layout_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btn_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/cb_capture_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:button="@drawable/barcode_flashlight_selector" />
+
+        <com.yunqilai.consumer.luckyapp.Common.Utils.RQCode.view.CaptureView
+            android:id="@+id/cv_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/cb_capture_flash"
+            android:layout_toEndOf="@+id/cb_capture_flash" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="48sp">
+
+        <ImageButton
+            android:paddingRight="@dimen/space_20"
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="条码"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/activity_capture_tv"
+        android:paddingTop="@dimen/space_10"
+        android:textColor="@color/bg_white"
+        android:gravity="center"
+        android:text="扫描失败?试试手动输入"
+        android:drawableTop="@drawable/icon_manual"
+        android:background="#454545"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/activity_capture_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_gray"
+        android:gravity="center"
+        android:layout_above="@id/activity_capture_tv"
+        android:paddingBottom="@dimen/space_15"
+        android:drawablePadding="@dimen/space_5"
+        android:drawableLeft="@drawable/icon_hint"
+        android:text="@string/capture_tip_msg"/>
+
+</RelativeLayout>

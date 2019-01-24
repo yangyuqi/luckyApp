@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:layout_below="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_below="@+id/include"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView
+            android:id="@+id/ls_app"
+            android:divider="#0000"
+            android:dividerHeight="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.yunqilai.consumer.luckyapp.Common.Ui.ListViewForScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/space_15"
+            android:orientation="vertical"
+            android:id="@+id/rl_appr"
+            android:background="@color/bg_white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <TextView
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_black"
+                android:gravity="center_vertical"
+                android:text="配送员"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/divider_color_page"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物流满意度"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_black"
+                    />
+
+                <com.hedgehog.ratingbar.RatingBar
+                    android:id="@+id/ratingbar_one"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    hedgehog:starCount="5"
+                    hedgehog:clickable="true"
+                    hedgehog:starEmpty="@drawable/btn_star"
+                    hedgehog:starFill="@drawable/btn_star_hl"
+                    hedgehog:starImageSize="20dp"
+                    >
+
+                </com.hedgehog.ratingbar.RatingBar>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/divider_color_page"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/tv_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务满意度"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_black"
+                    />
+
+                <com.hedgehog.ratingbar.RatingBar
+                    android:id="@+id/ratingbar_two"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    hedgehog:starCount="5"
+                    hedgehog:clickable="true"
+                    hedgehog:starEmpty="@drawable/btn_star"
+                    hedgehog:starFill="@drawable/btn_star_hl"
+                    hedgehog:starImageSize="20dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</RelativeLayout>

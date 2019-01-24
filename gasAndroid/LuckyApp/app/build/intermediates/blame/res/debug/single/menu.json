@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\__picker_menu_preview.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\menu\\__picker_menu_preview.xml"
+    },
+    {
+        "merged": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\__picker_menu_picker.xml",
+        "source": "D:\\android\\gasAndroid\\LuckyApp\\app\\build\\intermediates\\exploded-aar\\me.iwf.photopicker\\PhotoPicker\\0.9.0\\res\\menu\\__picker_menu_picker.xml"
+    }
+]

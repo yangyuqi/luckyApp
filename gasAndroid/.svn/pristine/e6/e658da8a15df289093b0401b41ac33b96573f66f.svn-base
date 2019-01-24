@@ -1,0 +1,33 @@
+package com.yunqilai.delivery;
+
+import android.app.Application;
+import android.content.Context;
+
+import com.yunqilai.delivery.manager.MyCrashHandler;
+
+/**
+ * Created by KK on 2017/6/12.
+ */
+
+public class MyApplication extends Application {
+
+    private static Context context;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        context = this;
+
+//        if(!Constants.isDebug){
+//            //捕获程序崩溃
+            Thread.setDefaultUncaughtExceptionHandler(new MyCrashHandler(this));
+//        }
+
+    }
+
+    public static Context getContext() {
+        return context;
+    }
+
+}

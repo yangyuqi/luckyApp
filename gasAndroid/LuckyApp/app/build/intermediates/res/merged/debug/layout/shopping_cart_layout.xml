@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_ls"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_above="@+id/rl_test_q"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_test_a"
+            android:paddingLeft="@dimen/space_15"
+            android:background="@color/bg_blue"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:drawablePadding="@dimen/space_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="您还没有实名认证,点击"
+                android:textColor="@color/text_black"
+                android:drawableLeft="@drawable/icon_volume"
+                />
+
+            <TextView
+                android:id="@+id/tv_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即前往"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/space_15"
+                android:textColor="@color/main_color"
+                />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:id="@+id/shopping_cart_ls"
+            android:layout_above="@+id/rl_test_q"
+            android:layout_below="@+id/ll_test_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@color/bg_white"
+            android:id="@+id/rl_test_q"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/divider_color_main" />
+
+            <CheckBox
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginLeft="@dimen/space_15"
+                android:id="@+id/cart_rb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/tv_test_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cart_rb"
+                android:text="全选"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/tv_pay"
+                android:clickable="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tv_pay_bg"
+                android:gravity="center"
+                android:text="结算"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/text_size_16" />
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/space_3"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/tv_pay"
+                android:layout_toRightOf="@+id/tv_test_q"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="end"
+                    android:layout_toLeftOf="@+id/tv_all_money"
+                    android:id="@+id/tv_test_w"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="合计:"
+                    android:layout_centerVertical="true"
+                />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:id="@+id/tv_all_money"
+                    android:layout_toLeftOf="@+id/tv_test_e"
+                    android:gravity="center_vertical|end"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_orgin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="￥0.00"
+
+                    />
+
+                <TextView
+                    android:layout_marginRight="@dimen/space_3"
+                    android:id="@+id/tv_test_e"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="不含运费"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_show"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有相关信息哦~"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

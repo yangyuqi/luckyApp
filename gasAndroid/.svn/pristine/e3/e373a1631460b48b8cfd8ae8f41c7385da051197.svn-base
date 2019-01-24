@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white" >
+    <RadioGroup
+        android:id="@+id/rg_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/foot_bar_home"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/btn_send"
+            android:text="@string/label_dispatch" />
+
+        <RadioButton
+            android:id="@+id/foot_bar_im"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/btn_money"
+            android:text="信息管理" />
+
+        <RadioButton
+            android:id="@+id/foot_bar_im2"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/btn_order"
+            android:text="@string/label_order" />
+
+        <RadioButton
+            android:id="@+id/foot_bar_interest"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/btn_attestation"
+            android:text="@string/label_attestation" />
+
+        <RadioButton
+            android:id="@+id/main_footbar_user"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/btn_person"
+            android:text="@string/label_my" />
+    </RadioGroup>
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"
+        android:layout_above="@id/rg_footer"/>
+
+    <com.yunqilai.delivery.ui.view.FixedSpeedViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_divider"/>
+</RelativeLayout>

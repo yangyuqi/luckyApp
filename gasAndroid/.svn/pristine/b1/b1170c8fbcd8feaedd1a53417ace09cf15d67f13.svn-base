@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">运气来骑手</string>
+
+    <!-- main -->
+    <string name="label_dispatch">派单</string>
+    <string name="label_info_manage">资产管理</string>
+    <string name="label_order">订单</string>
+    <string name="label_attestation">认证</string>
+    <string name="label_my">我的</string>
+
+    <!-- login -->
+    <string name="label_phonenumber">手机号码</string>
+    <string name="label_password">密码</string>
+    <string name="hint_enter_phonenumber">请输入手机号码</string>
+    <string name="hint_enter_password">请输入密码</string>
+    <string name="label_forget_password">忘记密码?</string>
+    <string name="btn_login">登录</string>
+
+    <!-- find pwd -->
+    <string name="label_reset_pwd">重置密码</string>
+    <string name="label_sure_pwd">确认密码</string>
+    <string name="label_verification_code">验证码</string>
+    <string name="hint_reset_pwd">请重置密码</string>
+    <string name="hint_sure_pwd">请确认密码</string>
+    <string name="hint_enter_verification_code">请输入验证码</string>
+    <string name="btn_verification_code">验证码</string>
+    <string name="btn_sure">确认</string>
+
+    <!-- Dispatch Fragment -->
+    <string name="head_wait_order">待接单</string>
+    <string name="head_wait_pickup">待取货</string>
+    <string name="head_wait_delivery">待配送</string>
+    <string name="head_complete">已完成</string>
+    <string name="head_wait_extract">待提取</string>
+    <string name="label_gong">共</string>
+    <string name="label_tiao">条</string>
+    <string name="label_order_">订单&#160;:&#160;</string>
+    <string name="label_jian_product">件商品,</string>
+    <string name="label_wait_pay_">待付款:￥</string>
+    <string name="lable_payed_">已付款:￥</string>
+    <string name="btn_sure_pick">确认提取</string>
+    <string name="label_pay_online">在线支付</string>
+    <string name="label_pay_on_delivery">货到付款</string>
+
+    <string name="title_order_detail">订单详情</string>
+
+    <!-- attestation -->
+    <string name="label_member_">会员&#160;:&#160;</string>
+    <string name="label_phone_">电话&#160;:&#160;</string>
+    <string name="label_id_card_">身份证&#160;:&#160;</string>
+    <string name="label_add_new">新增</string>
+
+    <!-- info manage -->
+    <string name="head_in_depot">库中(普通)</string>
+    <string name="head_enter_depot">入库(待例检)</string>
+    <string name="head_out_depot">库外</string>
+    <string name="head_in_check">例检中</string>
+    <string name="head_in_delivery">配送中</string>
+    <string name="head_in_use">使用中</string>
+    <string name="label_bar_code_">条形编码&#160;:&#160;</string>
+    <string name="label_tank_code_">瓶罐编码&#160;:&#160;</string>
+    <string name="label_tank_model_">瓶罐型号&#160;:&#160;</string>
+    <string name="label_produce_time_">生产日期&#160;:&#160;</string>
+    <string name="title_tank_manage">信息管理</string>
+    <string name="title_tank_info">瓶罐信息</string>
+    <string name="btn_to_replace_code">去补码</string>
+    <string name="title_code">条码</string>
+    <string name="tip_scan">对准条码在框内即可扫描</string>
+    <string name="tip_open_camera_failure">打开摄像头失败！</string>
+    <string name="label_code">条码</string>
+    <string name="hint_enter_code">请输入条码</string>
+    <string name="btn_query">查询</string>
+    <string name="btn_search">搜索</string>
+    <string name="btn_search_result">搜索结果</string>
+    <string name="hint_enter_tank_code">请输入瓶罐编码</string>
+    <string name="hint_enter_order_key">请输入订单编号、姓名、手机号</string>
+
+    <!-- my -->
+    <string name="btn_logout">退出登录</string>
+    <string name="label_dispatch_statistics">配送统计</string>
+    <string name="label_dispatch_matter">配送事项</string>
+    <string name="label_accounts_and_security">账户与安全</string>
+    <string name="label_about_us">关于我们</string>
+    <string name="label_clean_cache">清除缓存</string>
+    <string name="label_check_update">检查更新</string>
+
+
+    <!-- order detail -->
+    <string name="btn_refuse">拒绝</string>
+    <string name="btn_accept_order">接单</string>
+    <string name="label_order_is_on_delivery">订单为货到付款</string>
+    <string name="label_order_is_online">订单为在线支付</string>
+    <string name="label_wait_user_pay">待客户支付&#160;:&#160;</string>
+    <string name="label_user_has_pay">已支付&#160;:&#160;</string>
+    <string name="label_price">￥%1$s</string>
+    <string name="label_product_total_price">商品总金额</string>
+    <string name="label_ship_price">运费</string>
+    <string name="label_contant_up_floor_price">(包含上楼配送费:%1$s元)</string>
+    <string name="label_total_price">总金额</string>
+    <string name="label_order_num">订单编号&#160;:&#160;</string>
+    <string name="label_order_time">下单时间&#160;:&#160;</string>
+    <string name="label_refuse_order_time">拒单时间&#160;:&#160;</string>
+    <string name="label_pickup_order_time">取货时间&#160;:&#160;</string>
+    <string name="label_pay_type">支付方式&#160;:&#160;</string>
+    <string name="lable_pay_time">支付时间&#160;:&#160;</string>
+    <string name="label_order_type">订单类型&#160;:&#160;</string>
+    <string name="label_ride_sign">×</string>
+    <string name="label_type_">类型&#160;:&#160;</string>
+    <string name="label_online_order">线上订单</string>
+    <string name="label_agent_order">代客下单</string>
+
+    <string name="label_member_info">会员信息</string>
+    <string name="label_user_info">客户信息</string>
+    <string name="label_user_name">姓名</string>
+    <string name="label_phone">电话</string>
+    <string name="label_tank_info">气罐信息</string>
+    <string name="label_next_check_time">下次例检时间</string>
+    <string name="label_tank_expired_time">瓶罐到期时间</string>
+    <string name="label_checked_times">已例检次数</string>
+    <string name="label_new_bar_code">新条码信息</string>
+    <string name="label_bar_code_info">条码信息</string>
+    <string name="label_bar_code">条形编码</string>
+    <string name="label_tank_code">瓶罐编码</string>
+    <string name="label_tank_model">瓶罐型号</string>
+    <string name="label_produce_time">生产日期</string>
+    <string name="label_use_times">使用次数</string>
+
+    <!-- replace code -->
+    <string name="title_replace_code">补码</string>
+    <string name="label_has_use_times">已使用次数</string>
+    <string name="btn_scan">扫一扫</string>
+    <string name="btn_new_bar_code_tip">(新的条码)</string>
+    <string name="btn_bind">绑定</string>
+
+    <!-- attestation -->
+    <string name="title_modify_attestation">实名认证修改</string>
+    <string name="title_attestation">实名认证</string>
+    <string name="immediately_attestation">立即认证</string>
+    <string name="hint_enter_name">请输入姓名</string>
+    <string name="label_phone_num">手机号</string>
+    <string name="hint_enter_phone_num">请输入11位手机号码</string>
+    <string name="label_id_card">身份证</string>
+    <string name="label_reason_">原因&#160;:&#160;</string>
+    <string name="btn_to_modify">去修改</string>
+    <string name="hint_enter_id_card">请输入身份证号码</string>
+    <string name="btn_upload_again">重新上传</string>
+    <string name="btn_commit">提交</string>
+
+    <!-- dispatch statistics -->
+    <string name="label_dispatch_num_today">今日配送量</string>
+    <string name="label_dispatch_num_week">本周配送量</string>
+    <string name="label_dispatch_num_month">本月配送量</string>
+    <string name="label_dispatch_num_total">累计配送量</string>
+    <string name="label_dispatch_statistics_week">近一周配送量统计</string>
+    <string name="label_dispatch_statistics_month">近一月配送量统计</string>
+
+    <!-- accounts security -->
+    <string name="label_nickname">昵称</string>
+    <string name="label_modify_pwd">修改密码</string>
+    <string name="label_save">保存</string>
+    <string name="label_old_pwd">旧密码</string>
+    <string name="hint_enter_old_pwd">请输入旧密码</string>
+    <string name="label_new_pwd">新密码</string>
+    <string name="hint_enter_new_pwd">请输入新密码</string>
+    <string name="hint_sure_new_pwd">请确认新密码</string>
+
+    <string name="btn_take_photo">拍照</string>
+    <string name="btn_album">相册</string>
+    <string name="btn_cancel">取消</string>
+    
+    <string name="user_status_not">(未实名认证)</string>
+    <string name="user_status_ing">(实名认证中)</string>
+    <string name="user_status_failed">(实名认证失败)</string>
+    <string name="user_status_success">(认证成功)</string>
+
+
+    <!-- 引导页图片数组 -->
+    <string-array name="array_splash_pictures">
+        <item>@mipmap/splash1</item>
+        <item>@mipmap/splash2</item>
+        <item>@mipmap/splash3</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="service_error_500">服务器连接失败</string>
+
+    <string name="tip_exit">再按一次退出程序</string>
+</resources>

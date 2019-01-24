@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CommonTitle">
+        <attr name="leftStr" format="string"/>
+        <attr name="titleStr" format="string"/>
+        <attr name="rightStr" format="string"/>
+        <attr name="leftIcon" format="reference"/>
+        <attr name="rightIcon" format="reference"/>
+        <attr name="showLeft" format="boolean"/>
+        <attr name="showLeftIcon" format="boolean"/>
+        <attr name="showRight" format="boolean"/>
+        <attr name="showRightIcon" format="boolean"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_fill_color"/>
+    </declare-styleable>
+
+
+
+
+
+
+    <declare-styleable name="chartView">
+        <!-- xy坐标轴颜色 -->
+        <attr name="xylinecolor" format="color" />
+        <!-- xy坐标轴宽度 -->
+        <attr name="xylinewidth" format="dimension" />
+        <!-- xy坐标轴文字颜色 -->
+        <attr name="xytextcolor" format="color" />
+        <!-- xy坐标轴文字大小 -->
+        <attr name="xytextsize" format="dimension" />
+        <!-- 折线图中折线的颜色 -->
+        <attr name="linecolor" format="color" />
+        <!-- x轴各个坐标点水平间距 -->
+        <attr name="interval" format="dimension" />
+        <!-- 背景颜色 -->
+        <attr name="bgcolor" format="color" />
+        <!--是否在ACTION_UP时，根据速度进行自滑动，建议关闭，过于占用GPU-->
+        <attr name="isScroll" format="boolean" />
+    </declare-styleable>
+</resources>

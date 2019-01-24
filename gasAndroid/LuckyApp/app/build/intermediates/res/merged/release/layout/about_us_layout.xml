@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/space_15"-->
+        <!--android:textColor="@color/text_black"-->
+        <!--android:textSize="@dimen/text_size_16"-->
+        <!--android:id="@+id/tv_content"-->
+        <!--/>-->
+
+    <WebView
+        android:id="@+id/ls_details"
+        android:layout_below="@+id/view_ff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 扫描窗口 -->
+    <fragment
+        android:id="@+id/fragment_scan_product_fg_scan"
+        android:name="com.yunqilai.delivery.third.scanqrcode.ScanCodeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.yunqilai.delivery.ui.view.CommonTitle
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleStr="@string/title_code"/>
+    <LinearLayout
+        android:id="@+id/ll_input_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scan_foot_height"
+        android:orientation="vertical"
+        android:background="@color/scan_input"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_manual"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            style="@style/text_white_14"
+            android:text="扫描失败?试试手动输入"/>
+    </LinearLayout>
+
+</RelativeLayout>
